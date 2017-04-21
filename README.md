@@ -1,68 +1,69 @@
 # State Machine Learning for RERS LTL 2017 problems
 
-## Setup guide for Ubuntu
+### Setup guide for Ubuntu
 
- * Install GRaphViz for Dot File
- * Install Eclipse for Java
- * Install LearnLib
- * Download NuSMV
- * Download Git repository
+ * Install GraphViz
+ * Install Eclipse (if you want to change the learning/testing algorithm)
  * Install Powershell
  
-## Git Setup
-
  * git clone https://github.com/prince-ph0en1x/ltl17
  * cd ltl17/automate/
  * java AutomateLTL <problem_no>
+ 
+### Sample Run
 
-## FAQs
+ osboxes@osboxes:~/trygit/ltl17/automate$ java AutomateLTL 3
+ Welcome
+
+ Project Directory : /home/osboxes/trygit/ltl17/
+ 
+ ... running Problem 3 Compile		 [0/1]?
+ 1
+ ... running Problem 3 LearnSM		 [0/1]?
+ 1
+ ... running Problem 3 ConvLabel	 [0/1]?
+ 1
+ ... running Problem 3 MainDot2Nu	 [0/1]?
+ 1
+ ... running Problem 3 ConvISym		 [0/1]?
+ 1
+ ... running Problem 3 MainR2Nu		 [0/1]?
+ 1
+ ... running Problem 3 FullFile		 [0/1]?
+ 1
+ ... running Problem 3 NuSMV		 [0/1]?
+ 1
+ ... running Problem 3 GenSoln		 [0/1]?
+ 1
+ 
+ Result : /home/osboxes/trygit/ltl17/gensoln/opt_nusmv/p3_soln.csv
+ 
+ Thanks
+
+### FAQ
+
  * Which Learning algorithm is used?
   * TTT 
  * Which Testing algorithm is used?
 
+### Contacts
 
-Model Learn:
-
- Compile original C code of LTL RERS17
- Learn model of binary with Eclipse RERSlearner to generate dot file
- Change library dependency in cabal file
- Use dot file and constraint file in post processing Haskell scripts to get smv file in Powershell
- Use smv file in NuSMV to get result file
- Process result file to extract satisfiability for each constraint
-
-
-Command History:
-
- sudo apt-get install graphviz
-
-Install Haskell:
+ * Aritra Sarkar
+ * Prashanth GL
+ * Vivek Subramaniam
  
- sudo apt-get install haskell-platform
- cabal install
+### Credits
 
-
-Install and Run Powershell:
+ * https://github.com/TUDelft-CS4110-20162017/syllabus/tree/master/RERSLearning
+ * https://gitlab.science.ru.nl/moerman/rers-2016/tree/master/postprocessing
+ * http://nusmv.fbk.eu/NuSMV/download/getting-v2.html
+ 
+### Notes
 
  curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
  curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft.list
  sudo apt-get update
  sudo apt-get install -y powershell
- powershell
-
-Post Processing:
-  
-  gc .\<constraint_file_path>.txt | .\<MainR2Nu_path> | out-file -Encoding ascii <file1>.smv 
-  gc <model_dot_file_path>.dot | .\<MainDot2Nu_path> | out-file -Encoding ascii <file2>.smv
-  cp <file2>.smv <result_file>.smv; gc <file1>.smv | Add-Content -Path <file3>.smv
-  
-NuSMV Processing:
- 
- <NuSMV_path> <file3>.smv > <result_file>.txt
- 
-# Contacts
- * Aritra Sarkar
- * Prashanth GL
- * Vivek Subramaniam
- 
-# Credits
- 
+ sudo apt-get install graphviz
+ sudo apt-get install haskell-platform
+ cabal install
