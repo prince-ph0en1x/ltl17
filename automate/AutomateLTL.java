@@ -21,15 +21,22 @@ class Terminal
 {
 	public void RunCmd(int pno) throws Exception
 	{
-		final String pathRepo = "/home/osboxes/eclipsejava/ltl17/";
-		
 		ProcessBuilder pb;
 		Process p;
 		BufferedReader br;
 		String line;
 		int step = 0;
+		
 		BufferedReader term = new BufferedReader(new InputStreamReader(System.in));
 		
+		pb = new ProcessBuilder("pwd").redirectErrorStream(true); 
+		p = pb.start();
+		p.waitFor();
+		br = new BufferedReader(new InputStreamReader(p.getInputStream())); 
+		line = br.readLine();
+		final String pathRepo = line.substring(0,line.lastIndexOf('/'))+"/";
+		System.out.println("Project Directory : "+pathRepo+"\n");  
+			
 		System.out.println("... running Problem "+pno+" Compile\t\t [0/1]?");
 		step = Integer.parseInt(term.readLine());
 		if (step == 1)
@@ -52,7 +59,7 @@ class Terminal
 		step = Integer.parseInt(term.readLine());
 		if (step == 1)
 		{
-			pb = new ProcessBuilder("java","-cp",pathRepo+"learnlib.jar:"+pathRepo+"bin/","RERSlearner.RERSExperiment",pno+"").redirectErrorStream(true); 
+			pb = new ProcessBuilder("java","-cp",pathRepo+"learnlib.jar:"+pathRepo+"bin/","RERSlearner.RERSExperiment",pno+"",pathRepo).redirectErrorStream(true); 
 			pb.redirectOutput(new File("Log file.txt"));
 			p = pb.start();
 			p.waitFor();

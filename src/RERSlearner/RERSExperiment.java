@@ -19,7 +19,7 @@ public class RERSExperiment {
         int pno = Integer.parseInt(args[0]);
     	
     	// Load the System Under Learning (SUL)
-        SUL<String,String> sul = new ProcessSUL("/home/osboxes/eclipsejava/ltl17/ltl17c/Problem"+pno+".out");
+        SUL<String,String> sul = new ProcessSUL(args[1]+"ltl17c/Problem"+pno+".out");
         
         // the input alphabet
         int iAlphSz[] = {5,10,15,10,15,15,10,15,20};

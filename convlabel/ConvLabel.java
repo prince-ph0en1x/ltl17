@@ -28,7 +28,7 @@ class Analyse
 		//System.out.print("\nEnter Problem Number : ");
 		//int pno = Integer.parseInt(term.readLine());
 		
-		br = new BufferedReader(new FileReader(pathRepo+"opteclipse/Problem"+pno+"/Problem"+pno+"_model.dot"));
+		br = new BufferedReader(new FileReader(pathRepo+"opteclipse/Problem"+pno+"/model.dot"));
 		bw = new BufferedWriter(new FileWriter(pathRepo+"convlabel/dots/p"+pno+".dot"));
 		
 		String regex1 = "(.*)(label=\")(\\d)(\\s.*)";
