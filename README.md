@@ -1,3 +1,11 @@
+State Machine Learning for RERS LTL 2017 problems
+
+FAQs:
+ * Which Learning algorithm is used?
+ - TTT
+ * Which Testing algorithm is used?
+ - Wp and RandomWalk
+
 Setup:
 
  Install GRaphViz for Dot File
@@ -45,5 +53,7 @@ NuSMV Processing:
  
  <NuSMV_path> <file3>.smv > <result_file>.txt
  
-gc .\convlabel\dots\p1.dot | .\postprocessing\LTL\dist\build\MainDot2Nu\MainDot2Nu | out-file -Encoding ascii Problem1_s2.smv                                                 
-cp Problem1_s2.smv p1.smv; gc Problem1_s1.smv | Add-Content -Path p1.smv
+Contacts:
+ * Aritra Sarkar
+ * Prashanth GL
+ * Vivek Subramaniam
