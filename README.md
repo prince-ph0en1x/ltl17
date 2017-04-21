@@ -1,10 +1,15 @@
 State Machine Learning for RERS LTL 2017 problems
 
+> git clone https://github.com/prince-ph0en1x/ltl17
+> cd ltl17/automate/
+> java AutomateLTL <problem_no>
+
+
 FAQs:
  * Which Learning algorithm is used?
- - TTT
+	TTT
  * Which Testing algorithm is used?
- - Wp and RandomWalk
+	Wp and RandomWalk
 
 Setup:
 
