@@ -1,24 +1,25 @@
-State Machine Learning for RERS LTL 2017 problems
+# State Machine Learning for RERS LTL 2017 problems
 
-> git clone https://github.com/prince-ph0en1x/ltl17
-> cd ltl17/automate/
-> java AutomateLTL <problem_no>
+## Setup guide for Ubuntu
 
+ * Install GRaphViz for Dot File
+ * Install Eclipse for Java
+ * Install LearnLib
+ * Download NuSMV
+ * Download Git repository
+ * Install Powershell
+ 
+## Git Setup
 
-FAQs:
+ * git clone https://github.com/prince-ph0en1x/ltl17
+ * cd ltl17/automate/
+ * java AutomateLTL <problem_no>
+
+## FAQs
  * Which Learning algorithm is used?
-	TTT
+  * TTT 
  * Which Testing algorithm is used?
-	Wp and RandomWalk
 
-Setup:
-
- Install GRaphViz for Dot File
- Install Eclipse for Java
- Install LearnLib
- Download NuSMV
- Download Git repository
- Install Powershell
 
 Model Learn:
 
@@ -58,7 +59,10 @@ NuSMV Processing:
  
  <NuSMV_path> <file3>.smv > <result_file>.txt
  
-Contacts:
+# Contacts
  * Aritra Sarkar
  * Prashanth GL
  * Vivek Subramaniam
+ 
+# Credits
+ 
