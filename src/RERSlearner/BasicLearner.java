@@ -171,6 +171,7 @@ public class BasicLearner {
 	 * @throws IOException
 	 */
 	public static void runControlledExperiment(
+			String pathOpt,
 			LearningAlgorithm<MealyMachine<?, String, ?, String>, String, Word<String>> learner,
 			EquivalenceOracle<MealyMachine<?, String, ?, String>, String, Word<String>> eqOracle,
 			Counter nrSymbols, Counter nrResets,
@@ -186,7 +187,7 @@ public class BasicLearner {
 			while(true) {
 				// store hypothesis as file
 				if(saveAllHypotheses) {
-					String outputFilename = INTERMEDIATE_HYPOTHESIS_FILENAME + stage;
+					String outputFilename = pathOpt + INTERMEDIATE_HYPOTHESIS_FILENAME + stage;
 					produceOutput(outputFilename, learner.getHypothesisModel(), alphabet, false);
 					System.out.println("model size " + learner.getHypothesisModel().getStates().size());
 				}
@@ -215,7 +216,7 @@ public class BasicLearner {
 				if(ce == null) {
 					// No counterexample found, stop learning
 					System.out.println("\nFinished learning!");
-					produceOutput(FINAL_MODEL_FILENAME, learner.getHypothesisModel(), alphabet, true);
+					produceOutput(pathOpt + FINAL_MODEL_FILENAME, learner.getHypothesisModel(), alphabet, true);
 					break;
 				} else {
 					// Counterexample found, rinse and repeat
@@ -226,7 +227,7 @@ public class BasicLearner {
 			}
 		} catch (Exception e) {
 			String errorHypName = "hyp.before.crash.dot";
-			produceOutput(errorHypName, learner.getHypothesisModel(), alphabet, true);
+			produceOutput(pathOpt + errorHypName, learner.getHypothesisModel(), alphabet, true);
 			throw e;
 		}
 	}
@@ -242,6 +243,7 @@ public class BasicLearner {
 	 * @throws IOException
 	 */
 	public static void runControlledExperiment(
+			String pathOpt,
 			SUL<String,String> sul,
 			LearningMethod learningMethod,
 			TestingMethod testingMethod,
@@ -249,7 +251,7 @@ public class BasicLearner {
 		) throws IOException {
 		Alphabet<String> learnlibAlphabet = new SimpleAlphabet<String>(alphabet);
 		LearningSetup learningSetup = new LearningSetup(sul, learningMethod, testingMethod, learnlibAlphabet);
-		runControlledExperiment(learningSetup.learner, learningSetup.eqOracle, learningSetup.nrSymbols, learningSetup.nrResets, learnlibAlphabet);
+		runControlledExperiment(pathOpt, learningSetup.learner, learningSetup.eqOracle, learningSetup.nrSymbols, learningSetup.nrResets, learnlibAlphabet);
 	}
 
 	/**
@@ -265,7 +267,7 @@ public class BasicLearner {
 		PrintWriter dotWriter = new PrintWriter(fileName + ".dot");
 		GraphDOT.write(model, alphabet, dotWriter);
 		try {
-			DOT.runDOT(new File(fileName + ".dot"), "pdf", new File(fileName + ".pdf"));
+			// DOT.runDOT(new File(fileName + ".dot"), "pdf", new File(fileName + ".pdf")); // disabled for speedup
 		} catch (Exception e) {
 			if (verboseError) {
 				System.err.println("Warning: Install graphviz to convert dot-files to PDF");

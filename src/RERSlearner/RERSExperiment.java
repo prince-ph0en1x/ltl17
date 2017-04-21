@@ -31,7 +31,8 @@ public class RERSExperiment {
 
         try {
             // runControlledExperiment for detailed statistics, runSimpleExperiment for just the result
-            BasicLearner.runControlledExperiment(sul, BasicLearner.LearningMethod.TTT, BasicLearner.TestingMethod.RandomWalk, inputAlphabet);
+        	BasicLearner.runControlledExperiment(args[1]+"opteclipse/Problem"+pno+"/", sul, BasicLearner.LearningMethod.TTT, BasicLearner.TestingMethod.RandomWalk, inputAlphabet);
+            //BasicLearner.runControlledExperiment(sul, BasicLearner.LearningMethod.TTT, BasicLearner.TestingMethod.RandomWalk, inputAlphabet);
             //BasicLearner.runControlledExperiment(sul, BasicLearner.LearningMethod.LStar, BasicLearner.TestingMethod.WMethod, inputAlphabet);
         } finally {
             if (sul instanceof AutoCloseable) {

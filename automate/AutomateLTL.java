@@ -60,7 +60,7 @@ class Terminal
 		if (step == 1)
 		{
 			pb = new ProcessBuilder("java","-cp",pathRepo+"learnlib.jar:"+pathRepo+"bin/","RERSlearner.RERSExperiment",pno+"",pathRepo).redirectErrorStream(true); 
-			pb.redirectOutput(new File("Log file.txt"));
+			pb.redirectOutput(new File(pathRepo+"opteclipse/Problem"+pno+"/Log file.txt"));
 			p = pb.start();
 			p.waitFor();
 		}
