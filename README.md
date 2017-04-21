@@ -5,7 +5,6 @@
  * Install GraphViz
  * Install Eclipse (if you want to change the learning/testing algorithm)
  * Install Powershell
- 
  * git clone https://github.com/prince-ph0en1x/ltl17
  * cd ltl17/automate/
  * java AutomateLTL <problem_no>
@@ -14,7 +13,7 @@
 
  osboxes@osboxes:~/trygit/ltl17/automate$ java AutomateLTL 3
  Welcome
-
+ 
  Project Directory : /home/osboxes/trygit/ltl17/
  
  ... running Problem 3 Compile		 [0/1]?
