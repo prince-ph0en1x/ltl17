@@ -1,0 +1,749 @@
+model size 1
+0: Sun Apr 09 01:16:03 CEST 2017
+Hypothesis size: 1 states
+learning queries/symbols: 15/15(15/15 this learning round)
+testing queries/symbols: 31/32(16/17 this testing round)
+
+model size 5
+1: Sun Apr 09 01:16:06 CEST 2017
+Hypothesis size: 5 states
+learning queries/symbols: 255/705(224/673 this learning round)
+testing queries/symbols: 409/1276(154/571 this testing round)
+
+model size 6
+2: Sun Apr 09 01:16:09 CEST 2017
+Hypothesis size: 6 states
+learning queries/symbols: 476/1571(67/295 this learning round)
+testing queries/symbols: 592/1973(116/402 this testing round)
+
+model size 8
+3: Sun Apr 09 01:16:12 CEST 2017
+Hypothesis size: 8 states
+learning queries/symbols: 762/2637(170/664 this learning round)
+testing queries/symbols: 1487/5835(725/3198 this testing round)
+
+model size 17
+4: Sun Apr 09 01:16:34 CEST 2017
+Hypothesis size: 17 states
+learning queries/symbols: 2387/10646(900/4811 this learning round)
+testing queries/symbols: 2409/10723(22/77 this testing round)
+
+model size 28
+5: Sun Apr 09 01:16:51 CEST 2017
+Hypothesis size: 28 states
+learning queries/symbols: 3405/16500(996/5777 this learning round)
+testing queries/symbols: 3804/18562(399/2062 this testing round)
+
+model size 29
+6: Sun Apr 09 01:16:58 CEST 2017
+Hypothesis size: 29 states
+learning queries/symbols: 3867/18918(63/356 this learning round)
+testing queries/symbols: 6237/32230(2370/13312 this testing round)
+
+model size 32
+7: Sun Apr 09 01:17:40 CEST 2017
+Hypothesis size: 32 states
+learning queries/symbols: 6548/34239(311/2009 this learning round)
+testing queries/symbols: 7044/36943(496/2704 this testing round)
+
+model size 33
+8: Sun Apr 09 01:17:50 CEST 2017
+Hypothesis size: 33 states
+learning queries/symbols: 7135/37601(91/658 this learning round)
+testing queries/symbols: 7184/37786(49/185 this testing round)
+
+model size 41
+9: Sun Apr 09 01:18:11 CEST 2017
+Hypothesis size: 41 states
+learning queries/symbols: 8449/45204(1265/7418 this learning round)
+testing queries/symbols: 8536/45586(87/382 this testing round)
+
+model size 43
+10: Sun Apr 09 01:18:16 CEST 2017
+Hypothesis size: 43 states
+learning queries/symbols: 8736/46859(200/1273 this learning round)
+testing queries/symbols: 8830/47283(94/424 this testing round)
+
+model size 44
+11: Sun Apr 09 01:18:20 CEST 2017
+Hypothesis size: 44 states
+learning queries/symbols: 8930/47894(100/611 this learning round)
+testing queries/symbols: 9699/52158(769/4264 this testing round)
+
+model size 45
+12: Sun Apr 09 01:18:33 CEST 2017
+Hypothesis size: 45 states
+learning queries/symbols: 9778/52618(79/460 this learning round)
+testing queries/symbols: 10571/57041(793/4423 this testing round)
+
+model size 46
+13: Sun Apr 09 01:18:47 CEST 2017
+Hypothesis size: 46 states
+learning queries/symbols: 10671/57709(100/668 this learning round)
+testing queries/symbols: 11712/63575(1041/5866 this testing round)
+
+model size 47
+14: Sun Apr 09 01:19:06 CEST 2017
+Hypothesis size: 47 states
+learning queries/symbols: 11818/64208(106/633 this learning round)
+testing queries/symbols: 12172/66122(354/1914 this testing round)
+
+model size 48
+15: Sun Apr 09 01:19:14 CEST 2017
+Hypothesis size: 48 states
+learning queries/symbols: 12272/66680(100/558 this learning round)
+testing queries/symbols: 13214/71984(942/5304 this testing round)
+
+model size 52
+16: Sun Apr 09 01:19:38 CEST 2017
+Hypothesis size: 52 states
+learning queries/symbols: 13758/75417(544/3433 this learning round)
+testing queries/symbols: 15006/82689(1248/7272 this testing round)
+
+model size 58
+17: Sun Apr 09 01:20:20 CEST 2017
+Hypothesis size: 58 states
+learning queries/symbols: 16159/90495(1153/7806 this learning round)
+testing queries/symbols: 17650/99054(1491/8559 this testing round)
+
+model size 59
+18: Sun Apr 09 01:20:48 CEST 2017
+Hypothesis size: 59 states
+learning queries/symbols: 17771/99737(121/683 this learning round)
+testing queries/symbols: 19346/108797(1575/9060 this testing round)
+
+model size 60
+19: Sun Apr 09 01:21:14 CEST 2017
+Hypothesis size: 60 states
+learning queries/symbols: 19421/109257(75/460 this learning round)
+testing queries/symbols: 21044/118629(1623/9372 this testing round)
+
+model size 61
+20: Sun Apr 09 01:21:41 CEST 2017
+Hypothesis size: 61 states
+learning queries/symbols: 21193/119506(149/877 this learning round)
+testing queries/symbols: 21438/120773(245/1267 this testing round)
+
+model size 62
+21: Sun Apr 09 01:21:48 CEST 2017
+Hypothesis size: 62 states
+learning queries/symbols: 21544/121466(106/693 this learning round)
+testing queries/symbols: 21934/123713(390/2247 this testing round)
+
+model size 71
+22: Sun Apr 09 01:22:25 CEST 2017
+Hypothesis size: 71 states
+learning queries/symbols: 23814/135638(1880/11925 this learning round)
+testing queries/symbols: 24111/137203(297/1565 this testing round)
+
+model size 73
+23: Sun Apr 09 01:22:36 CEST 2017
+Hypothesis size: 73 states
+learning queries/symbols: 24391/139060(280/1857 this learning round)
+testing queries/symbols: 24690/140637(299/1577 this testing round)
+
+model size 74
+24: Sun Apr 09 01:22:43 CEST 2017
+Hypothesis size: 74 states
+learning queries/symbols: 24809/141436(119/799 this learning round)
+testing queries/symbols: 25486/145267(677/3831 this testing round)
+
+model size 75
+25: Sun Apr 09 01:22:57 CEST 2017
+Hypothesis size: 75 states
+learning queries/symbols: 25620/146163(134/896 this learning round)
+testing queries/symbols: 26370/150439(750/4276 this testing round)
+
+model size 76
+26: Sun Apr 09 01:23:10 CEST 2017
+Hypothesis size: 76 states
+learning queries/symbols: 26465/151020(95/581 this learning round)
+testing queries/symbols: 27226/155369(761/4349 this testing round)
+
+model size 78
+27: Sun Apr 09 01:23:27 CEST 2017
+Hypothesis size: 78 states
+learning queries/symbols: 27486/157111(260/1742 this learning round)
+testing queries/symbols: 27892/159407(406/2296 this testing round)
+
+model size 79
+28: Sun Apr 09 01:23:36 CEST 2017
+Hypothesis size: 79 states
+learning queries/symbols: 27995/160112(103/705 this learning round)
+testing queries/symbols: 29873/171226(1878/11114 this testing round)
+
+model size 80
+29: Sun Apr 09 01:24:08 CEST 2017
+Hypothesis size: 80 states
+learning queries/symbols: 30009/172042(136/816 this learning round)
+testing queries/symbols: 31913/183333(1904/11291 this testing round)
+
+model size 82
+30: Sun Apr 09 01:24:43 CEST 2017
+Hypothesis size: 82 states
+learning queries/symbols: 32170/185047(257/1714 this learning round)
+testing queries/symbols: 34177/196998(2007/11951 this testing round)
+
+model size 83
+31: Sun Apr 09 01:25:17 CEST 2017
+Hypothesis size: 83 states
+learning queries/symbols: 34309/197876(132/878 this learning round)
+testing queries/symbols: 36904/213425(2595/15549 this testing round)
+
+model size 84
+32: Sun Apr 09 01:26:03 CEST 2017
+Hypothesis size: 84 states
+learning queries/symbols: 37038/214369(134/944 this learning round)
+testing queries/symbols: 40267/233806(3229/19437 this testing round)
+
+model size 85
+33: Sun Apr 09 01:26:54 CEST 2017
+Hypothesis size: 85 states
+learning queries/symbols: 40349/234360(82/554 this learning round)
+testing queries/symbols: 44108/257075(3759/22715 this testing round)
+
+model size 86
+34: Sun Apr 09 01:27:53 CEST 2017
+Hypothesis size: 86 states
+learning queries/symbols: 44207/257722(99/647 this learning round)
+testing queries/symbols: 48020/280803(3813/23081 this testing round)
+
+model size 87
+35: Sun Apr 09 01:28:53 CEST 2017
+Hypothesis size: 87 states
+learning queries/symbols: 48102/281291(82/488 this learning round)
+testing queries/symbols: 53281/312764(5179/31473 this testing round)
+
+model size 88
+36: Sun Apr 09 01:30:17 CEST 2017
+Hypothesis size: 88 states
+learning queries/symbols: 53396/313549(115/785 this learning round)
+testing queries/symbols: 59072/348145(5676/34596 this testing round)
+
+model size 89
+37: Sun Apr 09 01:31:46 CEST 2017
+Hypothesis size: 89 states
+learning queries/symbols: 59183/348772(111/627 this learning round)
+testing queries/symbols: 60763/358203(1580/9431 this testing round)
+
+model size 90
+38: Sun Apr 09 01:32:12 CEST 2017
+Hypothesis size: 90 states
+learning queries/symbols: 60850/358769(87/566 this learning round)
+testing queries/symbols: 66920/395855(6070/37086 this testing round)
+
+model size 91
+39: Sun Apr 09 01:33:50 CEST 2017
+Hypothesis size: 91 states
+learning queries/symbols: 67029/396599(109/744 this learning round)
+testing queries/symbols: 67076/396755(47/156 this testing round)
+
+model size 101
+40: Sun Apr 09 01:34:20 CEST 2017
+Hypothesis size: 101 states
+learning queries/symbols: 69029/408077(1953/11322 this learning round)
+testing queries/symbols: 69260/409175(231/1098 this testing round)
+
+model size 104
+41: Sun Apr 09 01:34:32 CEST 2017
+Hypothesis size: 104 states
+learning queries/symbols: 69684/411873(424/2698 this learning round)
+testing queries/symbols: 70007/413523(323/1650 this testing round)
+
+model size 105
+42: Sun Apr 09 01:34:39 CEST 2017
+Hypothesis size: 105 states
+learning queries/symbols: 70097/414077(90/554 this learning round)
+testing queries/symbols: 70423/415745(326/1668 this testing round)
+
+model size 106
+43: Sun Apr 09 01:34:46 CEST 2017
+Hypothesis size: 106 states
+learning queries/symbols: 70556/416609(133/864 this learning round)
+testing queries/symbols: 74198/438685(3642/22076 this testing round)
+
+model size 107
+44: Sun Apr 09 01:35:45 CEST 2017
+Hypothesis size: 107 states
+learning queries/symbols: 74301/439312(103/627 this learning round)
+testing queries/symbols: 78164/462746(3863/23434 this testing round)
+
+model size 109
+45: Sun Apr 09 01:36:51 CEST 2017
+Hypothesis size: 109 states
+learning queries/symbols: 78434/464725(270/1979 this learning round)
+testing queries/symbols: 83035/492843(4601/28118 this testing round)
+
+model size 111
+46: Sun Apr 09 01:38:07 CEST 2017
+Hypothesis size: 111 states
+learning queries/symbols: 83247/494179(212/1336 this learning round)
+testing queries/symbols: 84012/498706(765/4527 this testing round)
+
+model size 112
+47: Sun Apr 09 01:38:22 CEST 2017
+Hypothesis size: 112 states
+learning queries/symbols: 84137/499565(125/859 this learning round)
+testing queries/symbols: 86333/512858(2196/13293 this testing round)
+
+model size 120
+48: Sun Apr 09 01:39:28 CEST 2017
+Hypothesis size: 120 states
+learning queries/symbols: 88224/524359(1891/11501 this learning round)
+testing queries/symbols: 88508/525730(284/1371 this testing round)
+
+model size 122
+49: Sun Apr 09 01:39:37 CEST 2017
+Hypothesis size: 122 states
+learning queries/symbols: 88760/527324(252/1594 this learning round)
+testing queries/symbols: 89402/530927(642/3603 this testing round)
+
+model size 123
+50: Sun Apr 09 01:39:49 CEST 2017
+Hypothesis size: 123 states
+learning queries/symbols: 89510/531667(108/740 this learning round)
+testing queries/symbols: 90186/535508(676/3841 this testing round)
+
+model size 124
+51: Sun Apr 09 01:40:02 CEST 2017
+Hypothesis size: 124 states
+learning queries/symbols: 90278/536136(92/628 this learning round)
+testing queries/symbols: 92052/546799(1774/10663 this testing round)
+
+model size 125
+52: Sun Apr 09 01:40:31 CEST 2017
+Hypothesis size: 125 states
+learning queries/symbols: 92161/547543(109/744 this learning round)
+testing queries/symbols: 96841/576370(4680/28827 this testing round)
+
+model size 126
+53: Sun Apr 09 01:41:47 CEST 2017
+Hypothesis size: 126 states
+learning queries/symbols: 97003/577315(162/945 this learning round)
+testing queries/symbols: 97949/583037(946/5722 this testing round)
+
+model size 127
+54: Sun Apr 09 01:42:04 CEST 2017
+Hypothesis size: 127 states
+learning queries/symbols: 98044/583687(95/650 this learning round)
+testing queries/symbols: 102949/613864(4905/30177 this testing round)
+
+model size 128
+55: Sun Apr 09 01:43:23 CEST 2017
+Hypothesis size: 128 states
+learning queries/symbols: 103133/615060(184/1196 this learning round)
+testing queries/symbols: 108698/649623(5565/34563 this testing round)
+
+model size 129
+56: Sun Apr 09 01:44:53 CEST 2017
+Hypothesis size: 129 states
+learning queries/symbols: 108815/650511(117/888 this learning round)
+testing queries/symbols: 114914/688257(6099/37746 this testing round)
+
+model size 130
+57: Sun Apr 09 01:46:30 CEST 2017
+Hypothesis size: 130 states
+learning queries/symbols: 115032/689036(118/779 this learning round)
+testing queries/symbols: 121199/727235(6167/38199 this testing round)
+
+model size 131
+58: Sun Apr 09 01:48:08 CEST 2017
+Hypothesis size: 131 states
+learning queries/symbols: 121313/727966(114/731 this learning round)
+testing queries/symbols: 127593/766888(6280/38922 this testing round)
+
+model size 132
+59: Sun Apr 09 01:49:49 CEST 2017
+Hypothesis size: 132 states
+learning queries/symbols: 127696/767588(103/700 this learning round)
+testing queries/symbols: 129083/776096(1387/8508 this testing round)
+
+model size 138
+60: Sun Apr 09 01:50:37 CEST 2017
+Hypothesis size: 138 states
+learning queries/symbols: 130688/786605(1605/10509 this learning round)
+testing queries/symbols: 130921/787630(233/1025 this testing round)
+
+model size 141
+61: Sun Apr 09 01:50:48 CEST 2017
+Hypothesis size: 141 states
+learning queries/symbols: 131303/789896(382/2266 this learning round)
+testing queries/symbols: 133310/801888(2007/11992 this testing round)
+
+model size 142
+62: Sun Apr 09 01:51:22 CEST 2017
+Hypothesis size: 142 states
+learning queries/symbols: 133437/802703(127/815 this learning round)
+testing queries/symbols: 136584/821895(3147/19192 this testing round)
+
+model size 145
+63: Sun Apr 09 01:52:21 CEST 2017
+Hypothesis size: 145 states
+learning queries/symbols: 137180/825679(596/3784 this learning round)
+testing queries/symbols: 140521/846075(3341/20396 this testing round)
+
+model size 146
+64: Sun Apr 09 01:53:16 CEST 2017
+Hypothesis size: 146 states
+learning queries/symbols: 140641/846824(120/749 this learning round)
+testing queries/symbols: 144339/869733(3698/22909 this testing round)
+
+model size 148
+65: Sun Apr 09 01:54:19 CEST 2017
+Hypothesis size: 148 states
+learning queries/symbols: 144524/870975(185/1242 this learning round)
+testing queries/symbols: 148336/894622(3812/23647 this testing round)
+
+model size 149
+66: Sun Apr 09 01:55:25 CEST 2017
+Hypothesis size: 149 states
+learning queries/symbols: 148439/895310(103/688 this learning round)
+testing queries/symbols: 152405/919917(3966/24607 this testing round)
+
+model size 150
+67: Sun Apr 09 01:56:39 CEST 2017
+Hypothesis size: 150 states
+learning queries/symbols: 152545/920800(140/883 this learning round)
+testing queries/symbols: 157278/951161(4733/30361 this testing round)
+
+model size 151
+68: Sun Apr 09 01:58:03 CEST 2017
+Hypothesis size: 151 states
+learning queries/symbols: 157389/951966(111/805 this learning round)
+testing queries/symbols: 163648/991618(6259/39652 this testing round)
+
+model size 153
+69: Sun Apr 09 01:59:59 CEST 2017
+Hypothesis size: 153 states
+learning queries/symbols: 163965/993769(317/2151 this learning round)
+testing queries/symbols: 172158/1045961(8193/52192 this testing round)
+
+model size 154
+70: Sun Apr 09 02:02:17 CEST 2017
+Hypothesis size: 154 states
+learning queries/symbols: 172286/1046841(128/880 this learning round)
+testing queries/symbols: 182208/1110295(9922/63454 this testing round)
+
+model size 155
+71: Sun Apr 09 02:04:49 CEST 2017
+Hypothesis size: 155 states
+learning queries/symbols: 182372/1111393(164/1098 this learning round)
+testing queries/symbols: 194115/1186699(11743/75306 this testing round)
+
+model size 156
+72: Sun Apr 09 02:07:50 CEST 2017
+Hypothesis size: 156 states
+learning queries/symbols: 194233/1187505(118/806 this learning round)
+testing queries/symbols: 206070/1263463(11837/75958 this testing round)
+
+model size 157
+73: Sun Apr 09 02:10:56 CEST 2017
+Hypothesis size: 157 states
+learning queries/symbols: 206178/1264198(108/735 this learning round)
+testing queries/symbols: 221472/1362824(15294/98626 this testing round)
+
+model size 159
+74: Sun Apr 09 02:15:22 CEST 2017
+Hypothesis size: 159 states
+learning queries/symbols: 221735/1364478(263/1654 this learning round)
+testing queries/symbols: 237771/1467674(16036/103196 this testing round)
+
+model size 160
+75: Sun Apr 09 02:19:55 CEST 2017
+Hypothesis size: 160 states
+learning queries/symbols: 237847/1468186(76/512 this learning round)
+testing queries/symbols: 255086/1579918(17239/111732 this testing round)
+
+model size 162
+76: Sun Apr 09 02:24:59 CEST 2017
+Hypothesis size: 162 states
+learning queries/symbols: 255530/1584099(444/4181 this learning round)
+testing queries/symbols: 273815/1701871(18285/117772 this testing round)
+
+model size 163
+77: Sun Apr 09 02:30:11 CEST 2017
+Hypothesis size: 163 states
+learning queries/symbols: 273911/1702497(96/626 this learning round)
+testing queries/symbols: 294126/1832903(20215/130406 this testing round)
+
+model size 164
+78: Sun Apr 09 02:35:56 CEST 2017
+Hypothesis size: 164 states
+learning queries/symbols: 294262/1833790(136/887 this learning round)
+testing queries/symbols: 314703/1965710(20441/131920 this testing round)
+
+model size 165
+79: Sun Apr 09 02:41:45 CEST 2017
+Hypothesis size: 165 states
+learning queries/symbols: 314834/1966580(131/870 this learning round)
+testing queries/symbols: 336079/2104147(21245/137567 this testing round)
+
+model size 166
+80: Sun Apr 09 02:47:48 CEST 2017
+Hypothesis size: 166 states
+learning queries/symbols: 336221/2105125(142/978 this learning round)
+testing queries/symbols: 358130/2247483(21909/142358 this testing round)
+
+model size 167
+81: Sun Apr 09 02:54:06 CEST 2017
+Hypothesis size: 167 states
+learning queries/symbols: 358299/2248870(169/1387 this learning round)
+testing queries/symbols: 380577/2392976(22278/144106 this testing round)
+
+model size 168
+82: Sun Apr 09 03:00:20 CEST 2017
+Hypothesis size: 168 states
+learning queries/symbols: 380705/2393707(128/731 this learning round)
+testing queries/symbols: 382293/2403695(1588/9988 this testing round)
+
+model size 169
+83: Sun Apr 09 03:00:49 CEST 2017
+Hypothesis size: 169 states
+learning queries/symbols: 382391/2404365(98/670 this learning round)
+testing queries/symbols: 399280/2513205(16889/108840 this testing round)
+
+model size 170
+84: Sun Apr 09 03:05:27 CEST 2017
+Hypothesis size: 170 states
+learning queries/symbols: 399375/2513756(95/551 this learning round)
+testing queries/symbols: 422182/2661166(22807/147410 this testing round)
+
+model size 171
+85: Sun Apr 09 03:11:46 CEST 2017
+Hypothesis size: 171 states
+learning queries/symbols: 422333/2662157(151/991 this learning round)
+testing queries/symbols: 445555/2812259(23222/150102 this testing round)
+
+model size 172
+86: Sun Apr 09 03:18:11 CEST 2017
+Hypothesis size: 172 states
+learning queries/symbols: 445648/2812826(93/567 this learning round)
+testing queries/symbols: 469164/2964872(23516/152046 this testing round)
+
+model size 173
+87: Sun Apr 09 03:24:41 CEST 2017
+Hypothesis size: 173 states
+learning queries/symbols: 469274/2965550(110/678 this learning round)
+testing queries/symbols: 494903/3131454(25629/165904 this testing round)
+
+model size 174
+88: Sun Apr 09 03:31:50 CEST 2017
+Hypothesis size: 174 states
+learning queries/symbols: 495064/3132538(161/1084 this learning round)
+testing queries/symbols: 520999/3300474(25935/167936 this testing round)
+
+model size 175
+89: Sun Apr 09 03:39:01 CEST 2017
+Hypothesis size: 175 states
+learning queries/symbols: 521110/3301177(111/703 this learning round)
+testing queries/symbols: 548845/3481077(27735/179900 this testing round)
+
+model size 176
+90: Sun Apr 09 03:46:43 CEST 2017
+Hypothesis size: 176 states
+learning queries/symbols: 548998/3482101(153/1024 this learning round)
+testing queries/symbols: 577036/3664025(28038/181924 this testing round)
+
+model size 177
+91: Sun Apr 09 03:54:30 CEST 2017
+Hypothesis size: 177 states
+learning queries/symbols: 577157/3664821(121/796 this learning round)
+testing queries/symbols: 605424/3848313(28267/183492 this testing round)
+
+model size 178
+92: Sun Apr 09 04:02:23 CEST 2017
+Hypothesis size: 178 states
+learning queries/symbols: 605601/3849503(177/1190 this learning round)
+testing queries/symbols: 634068/4034385(28467/184882 this testing round)
+
+model size 179
+93: Sun Apr 09 04:10:16 CEST 2017
+Hypothesis size: 179 states
+learning queries/symbols: 634151/4034921(83/536 this learning round)
+testing queries/symbols: 662876/4221549(28725/186628 this testing round)
+
+model size 180
+94: Sun Apr 09 04:18:15 CEST 2017
+Hypothesis size: 180 states
+learning queries/symbols: 663011/4222434(135/885 this learning round)
+testing queries/symbols: 695406/4433892(32395/211458 this testing round)
+
+model size 182
+95: Sun Apr 09 04:27:22 CEST 2017
+Hypothesis size: 182 states
+learning queries/symbols: 695753/4437143(347/3251 this learning round)
+testing queries/symbols: 702290/4479988(6537/42845 this testing round)
+
+model size 183
+96: Sun Apr 09 04:29:16 CEST 2017
+Hypothesis size: 183 states
+learning queries/symbols: 702409/4481031(119/1043 this learning round)
+testing queries/symbols: 738184/4718578(35775/237547 this testing round)
+
+model size 184
+97: Sun Apr 09 04:39:26 CEST 2017
+Hypothesis size: 184 states
+learning queries/symbols: 738301/4719284(117/706 this learning round)
+testing queries/symbols: 818094/5290804(79793/571520 this testing round)
+
+model size 185
+98: Sun Apr 09 05:03:48 CEST 2017
+Hypothesis size: 185 states
+learning queries/symbols: 818195/5291423(101/619 this learning round)
+testing queries/symbols: 818390/5292243(195/820 this testing round)
+
+model size 189
+99: Sun Apr 09 05:04:05 CEST 2017
+Hypothesis size: 189 states
+learning queries/symbols: 819150/5297618(760/5375 this learning round)
+testing queries/symbols: 825494/5338360(6344/40742 this testing round)
+
+model size 193
+100: Sun Apr 09 05:06:13 CEST 2017
+Hypothesis size: 193 states
+learning queries/symbols: 826808/5347391(1314/9031 this learning round)
+testing queries/symbols: 833766/5391985(6958/44594 this testing round)
+
+model size 195
+101: Sun Apr 09 05:08:17 CEST 2017
+Hypothesis size: 195 states
+learning queries/symbols: 834244/5395266(478/3281 this learning round)
+testing queries/symbols: 849362/5493752(15118/98486 this testing round)
+
+model size 196
+102: Sun Apr 09 05:12:31 CEST 2017
+Hypothesis size: 196 states
+learning queries/symbols: 849523/5494805(161/1053 this learning round)
+testing queries/symbols: 865091/5596156(15568/101351 this testing round)
+
+model size 197
+103: Sun Apr 09 05:16:54 CEST 2017
+Hypothesis size: 197 states
+learning queries/symbols: 865285/5597468(194/1312 this learning round)
+testing queries/symbols: 881214/5701132(15929/103664 this testing round)
+
+model size 198
+104: Sun Apr 09 05:21:22 CEST 2017
+Hypothesis size: 198 states
+learning queries/symbols: 881340/5701942(126/810 this learning round)
+testing queries/symbols: 888347/5746960(7007/45018 this testing round)
+
+model size 199
+105: Sun Apr 09 05:23:20 CEST 2017
+Hypothesis size: 199 states
+learning queries/symbols: 888477/5747775(130/815 this learning round)
+testing queries/symbols: 895521/5793051(7044/45276 this testing round)
+
+model size 200
+106: Sun Apr 09 05:25:20 CEST 2017
+Hypothesis size: 200 states
+learning queries/symbols: 895695/5794247(174/1196 this learning round)
+testing queries/symbols: 914819/5919010(19124/124763 this testing round)
+
+model size 201
+107: Sun Apr 09 05:30:46 CEST 2017
+Hypothesis size: 201 states
+learning queries/symbols: 915025/5920992(206/1982 this learning round)
+testing queries/symbols: 942503/6101197(27478/180205 this testing round)
+
+model size 204
+108: Sun Apr 09 05:38:35 CEST 2017
+Hypothesis size: 204 states
+learning queries/symbols: 943006/6104503(503/3306 this learning round)
+testing queries/symbols: 974429/6310530(31423/206027 this testing round)
+
+model size 205
+109: Sun Apr 09 05:47:23 CEST 2017
+Hypothesis size: 205 states
+learning queries/symbols: 974580/6311649(151/1119 this learning round)
+testing queries/symbols: 1011673/6555622(37093/243973 this testing round)
+
+model size 207
+110: Sun Apr 09 05:57:52 CEST 2017
+Hypothesis size: 207 states
+learning queries/symbols: 1012085/6558241(412/2619 this learning round)
+testing queries/symbols: 1050274/6808947(38189/250706 this testing round)
+
+model size 208
+111: Sun Apr 09 06:08:36 CEST 2017
+Hypothesis size: 208 states
+learning queries/symbols: 1050444/6810118(170/1171 this learning round)
+testing queries/symbols: 1088820/7062163(38376/252045 this testing round)
+
+model size 209
+112: Sun Apr 09 06:19:22 CEST 2017
+Hypothesis size: 209 states
+learning queries/symbols: 1088961/7063158(141/995 this learning round)
+testing queries/symbols: 1129927/7332911(40966/269753 this testing round)
+
+model size 215
+113: Sun Apr 09 06:31:33 CEST 2017
+Hypothesis size: 215 states
+learning queries/symbols: 1132220/7348368(2293/15457 this learning round)
+testing queries/symbols: 1133946/7358790(1726/10422 this testing round)
+
+model size 216
+114: Sun Apr 09 06:32:05 CEST 2017
+Hypothesis size: 216 states
+learning queries/symbols: 1134143/7360004(197/1214 this learning round)
+testing queries/symbols: 1150994/7469386(16851/109382 this testing round)
+
+model size 217
+115: Sun Apr 09 06:36:46 CEST 2017
+Hypothesis size: 217 states
+learning queries/symbols: 1151128/7470305(134/919 this learning round)
+testing queries/symbols: 1171648/7603616(20520/133311 this testing round)
+
+model size 218
+116: Sun Apr 09 06:42:31 CEST 2017
+Hypothesis size: 218 states
+learning queries/symbols: 1171857/7605059(209/1443 this learning round)
+testing queries/symbols: 1208427/7843725(36570/238666 this testing round)
+
+model size 219
+117: Sun Apr 09 06:52:42 CEST 2017
+Hypothesis size: 219 states
+learning queries/symbols: 1208594/7844957(167/1232 this learning round)
+testing queries/symbols: 1249079/8109180(40485/264223 this testing round)
+
+model size 220
+118: Sun Apr 09 07:04:00 CEST 2017
+Hypothesis size: 220 states
+learning queries/symbols: 1249266/8110469(187/1289 this learning round)
+testing queries/symbols: 1293334/8398243(44068/287774 this testing round)
+
+model size 221
+119: Sun Apr 09 07:16:18 CEST 2017
+Hypothesis size: 221 states
+learning queries/symbols: 1293518/8399961(184/1718 this learning round)
+testing queries/symbols: 1461958/9623059(168440/1223098 this testing round)
+
+model size 222
+120: Sun Apr 09 08:08:22 CEST 2017
+Hypothesis size: 222 states
+learning queries/symbols: 1462101/9624200(143/1141 this learning round)
+testing queries/symbols: 1693680/11340915(231579/1716715 this testing round)
+
+model size 223
+121: Sun Apr 09 09:21:25 CEST 2017
+Hypothesis size: 223 states
+learning queries/symbols: 1693835/11341998(155/1083 this learning round)
+testing queries/symbols: 2078105/14229540(384270/2887542 this testing round)
+
+model size 224
+122: Sun Apr 09 11:21:49 CEST 2017
+Hypothesis size: 224 states
+learning queries/symbols: 2078291/14230825(186/1285 this learning round)
+testing queries/symbols: 2117486/14492078(39195/261253 this testing round)
+
+model size 225
+123: Sun Apr 09 11:32:46 CEST 2017
+Hypothesis size: 225 states
+learning queries/symbols: 2117660/14493360(174/1282 this learning round)
+testing queries/symbols: 2700563/18915366(582903/4422006 this testing round)
+
+model size 226
+124: Sun Apr 09 14:37:08 CEST 2017
+Hypothesis size: 226 states
+learning queries/symbols: 2700774/18916785(211/1419 this learning round)
+

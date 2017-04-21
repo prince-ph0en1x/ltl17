@@ -1,0 +1,1799 @@
+*** This is NuSMV 2.6.0 (compiled on Wed Oct 14 15:36:56 2015)
+*** Enabled addons are: compass
+*** For more information on NuSMV see <http://nusmv.fbk.eu>
+*** or email to <nusmv-users@list.fbk.eu>.
+*** Please report bugs to <Please report bugs to <nusmv-users@fbk.eu>>
+
+*** Copyright (c) 2010-2014, Fondazione Bruno Kessler
+
+*** This version of NuSMV is linked to the CUDD library version 2.4.1
+*** Copyright (c) 1995-2004, Regents of the University of Colorado
+
+*** This version of NuSMV is linked to the MiniSat SAT solver. 
+*** See http://minisat.se/MiniSat.html
+*** Copyright (c) 2003-2006, Niklas Een, Niklas Sorensson
+*** Copyright (c) 2007-2010, Niklas Sorensson
+
+-- specification (!(!FALSE U !(!(input = iD))) | (!(input = iD) U (input = iD & (!(TRUE U (output = oW &  X (TRUE U output = oZ))) | (!(output = oW) U input = iG)))))  is true
+-- specification (!(TRUE U output = oT) | ((!(input = iH) | (!(output = oT) U (((output = oW & !(output = oT)) & !(output = oY)) &  X ((!(output = oT) & !(output = oY)) U output = oR)))) U output = oT))  is true
+-- specification (!(!FALSE U !(!(input = iK))) | (!(input = iK) U (input = iK & (!(TRUE U output = oW) | (!(output = oW) U ((output = oT & !(output = oW)) &  X (!(output = oW) U output = oY)))))))  is true
+-- specification !(!FALSE U !(!(output = oU) | ((!((output = oY & !(output = oR)) &  X (!(output = oR) U (output = oV & !(output = oR)))) U (output = oR | input = iA)) | !(!FALSE U !(!(output = oY &  X (TRUE U output = oV)))))))  is true
+-- specification !(!FALSE U !(!(input = iL & (TRUE U output = oU)) | (!(output = oP) U (output = oU | ((output = oQ & !(output = oP)) &  X (!(output = oP) U output = oY))))))  is true
+-- specification !(!FALSE U !(!((input = iE & !(output = oP)) & (TRUE U output = oP)) | (!(output = oR) U (input = iG | output = oP))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 1.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 1.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 1.3 <-
+    input = iD
+    output = null
+  -> State: 1.4 <-
+    state = s2
+    input = null
+    output = oX
+  -> State: 1.5 <-
+    input = iI
+    output = null
+  -> State: 1.6 <-
+    state = s11
+    input = null
+    output = oS
+  -> State: 1.7 <-
+    input = iE
+    output = null
+  -> State: 1.8 <-
+    state = s6
+    input = null
+    output = oR
+  -- Loop starts here
+  -> State: 1.9 <-
+    input = iL
+    output = null
+  -> State: 1.10 <-
+    input = null
+    output = oP
+  -- Loop starts here
+  -> State: 1.11 <-
+    input = iL
+    output = null
+  -> State: 1.12 <-
+    input = null
+    output = oP
+  -> State: 1.13 <-
+    input = iL
+    output = null
+-- specification !(!FALSE U !(!((input = iC & !(input = iH)) & (TRUE U input = iH)) | ((!(input = iD) | (!(input = iH) U (output = oV & !(input = iH)))) U input = iH)))  is true
+-- specification !(!FALSE U !(!(output = oX) | !(!FALSE U !(!(input = iK) | ((output = oP & !(output = oY)) &  X (!(output = oY) U output = oW))))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 2.1 <-
+    state = s0
+    input = iL
+    output = null
+  -> State: 2.2 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 2.3 <-
+    input = iI
+    output = null
+  -> State: 2.4 <-
+    state = s7
+    input = null
+    output = oV
+  -> State: 2.5 <-
+    input = iF
+    output = null
+  -> State: 2.6 <-
+    state = s9
+    input = null
+    output = oV
+  -> State: 2.7 <-
+    input = iF
+    output = null
+  -> State: 2.8 <-
+    state = s10
+    input = null
+    output = oX
+  -> State: 2.9 <-
+    input = iI
+    output = null
+  -> State: 2.10 <-
+    state = s7
+    input = null
+    output = oY
+  -> State: 2.11 <-
+    input = iL
+    output = null
+  -> State: 2.12 <-
+    state = s8
+    input = null
+    output = oT
+  -> State: 2.13 <-
+    input = iK
+    output = null
+  -> State: 2.14 <-
+    state = s6
+    input = null
+    output = oS
+  -- Loop starts here
+  -> State: 2.15 <-
+    input = iL
+    output = null
+  -> State: 2.16 <-
+    input = null
+    output = oP
+  -> State: 2.17 <-
+    input = iL
+    output = null
+-- specification !(!FALSE U !(!(input = iH) | ((!(input = iD) | (!(input = iC) U ((output = oY & !(input = iC)) &  X (!(input = iC) U output = oS)))) U (input = iC | !(!FALSE U !(!(input = iD) | (output = oY &  X (TRUE U output = oS))))))))  is true
+-- specification (!(TRUE U input = iG) | ((!(input = iA) | (!(input = iG) U ((output = oR & !(input = iG)) &  X (!(input = iG) U output = oS)))) U input = iG))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 3.1 <-
+    state = s0
+    input = iL
+    output = null
+  -> State: 3.2 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 3.3 <-
+    input = iI
+    output = null
+  -> State: 3.4 <-
+    state = s7
+    input = null
+    output = oV
+  -> State: 3.5 <-
+    input = iA
+    output = null
+  -> State: 3.6 <-
+    state = s14
+    input = null
+    output = oZ
+  -> State: 3.7 <-
+    input = iC
+    output = null
+  -> State: 3.8 <-
+    state = s15
+    input = null
+    output = oZ
+  -> State: 3.9 <-
+    input = iI
+    output = null
+  -> State: 3.10 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 3.11 <-
+    input = iI
+    output = null
+  -> State: 3.12 <-
+    state = s7
+    input = null
+    output = oV
+  -> State: 3.13 <-
+    input = iL
+    output = null
+  -> State: 3.14 <-
+    state = s8
+    input = null
+    output = oT
+  -> State: 3.15 <-
+    input = iF
+    output = null
+  -> State: 3.16 <-
+    state = s16
+    input = null
+    output = oT
+  -> State: 3.17 <-
+    input = iG
+    output = null
+  -> State: 3.18 <-
+    state = s6
+    input = null
+    output = oY
+  -- Loop starts here
+  -> State: 3.19 <-
+    input = iL
+    output = null
+  -> State: 3.20 <-
+    input = null
+    output = oP
+  -> State: 3.21 <-
+    input = iL
+    output = null
+-- specification (!(TRUE U input = iF) | (!(output = oW) U (input = iF | ((input = iL & !(output = oW)) &  X (!(output = oW) U output = oX)))))  is true
+-- specification !(!FALSE U !(!(input = iL & (TRUE U input = iE)) | ((!(input = iB) | (!(input = iE) U (((output = oW & !(input = iE)) & !(output = oS)) &  X ((!(input = iE) & !(output = oS)) U output = oZ)))) U input = iE)))  is true
+-- specification !(!(input = iL) U !(!(output = oQ) | input = iL))  is true
+-- specification !(!FALSE U !(!(output = oP) | !(!FALSE U !(!(input = iF) | (TRUE U output = oQ)))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 4.1 <-
+    state = s0
+    input = iL
+    output = null
+  -> State: 4.2 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 4.3 <-
+    input = iI
+    output = null
+  -> State: 4.4 <-
+    state = s7
+    input = null
+    output = oV
+  -> State: 4.5 <-
+    input = iF
+    output = null
+  -> State: 4.6 <-
+    state = s9
+    input = null
+    output = oV
+  -> State: 4.7 <-
+    input = iF
+    output = null
+  -> State: 4.8 <-
+    state = s10
+    input = null
+    output = oX
+  -> State: 4.9 <-
+    input = iI
+    output = null
+  -> State: 4.10 <-
+    state = s7
+    input = null
+    output = oY
+  -> State: 4.11 <-
+    input = iL
+    output = null
+  -> State: 4.12 <-
+    state = s8
+    input = null
+    output = oT
+  -> State: 4.13 <-
+    input = iK
+    output = null
+  -> State: 4.14 <-
+    state = s6
+    input = null
+    output = oS
+  -- Loop starts here
+  -> State: 4.15 <-
+    input = iL
+    output = null
+  -> State: 4.16 <-
+    input = null
+    output = oP
+  -> State: 4.17 <-
+    input = iL
+    output = null
+-- specification !(!FALSE U !(!(output = oW) | (!(TRUE U output = oX) | (!(output = oX) U (output = oR | ((input = iN & !(output = oX)) &  X (!(output = oX) U input = iA)))))))  is true
+-- specification !(!FALSE U !(!(output = oY & (TRUE U output = oU)) | (!(output = oZ) U (output = oU | ((input = iO & !(output = oZ)) &  X (!(output = oZ) U output = oR))))))  is true
+-- specification (!(TRUE U input = iA) | ((input = iL & (!( X (!(input = iA) U input = iJ)) |  X (!(input = iA) U (input = iJ & (TRUE U output = oX))))) U input = iA))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 5.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 5.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 5.3 <-
+    input = iI
+    output = null
+  -> State: 5.4 <-
+    state = s3
+    input = null
+    output = oX
+  -> State: 5.5 <-
+    input = iJ
+    output = null
+  -> State: 5.6 <-
+    state = s12
+    input = null
+    output = oV
+  -> State: 5.7 <-
+    input = iA
+    output = null
+  -> State: 5.8 <-
+    state = s6
+    input = null
+    output = oS
+  -- Loop starts here
+  -> State: 5.9 <-
+    input = iL
+    output = null
+  -> State: 5.10 <-
+    input = null
+    output = oP
+  -> State: 5.11 <-
+    input = iL
+    output = null
+-- specification !(!FALSE U !(!(output = oR) | !(!FALSE U !(!(input = iA) | (output = oZ &  X (TRUE U output = oP))))))  is true
+-- specification !(!FALSE U !(!(input = iI & (TRUE U input = iJ)) | (!(output = oP) U (input = iJ | ((output = oS & !(output = oP)) &  X (!(output = oP) U input = iM))))))  is true
+-- specification (!(!FALSE U !(!(output = oS))) | (!(output = oS) U (output = oS & (!(TRUE U output = oW) | (!(output = oW) U ((output = oQ & !(output = oW)) &  X (!(output = oW) U input = iA)))))))  is true
+-- specification !(!FALSE U !(!(output = oW) | !(!FALSE U !(!(input = iO) | (output = oZ &  X (TRUE U output = oT))))))  is true
+-- specification !(!FALSE U !(!(input = iI & (TRUE U input = iD)) | ((input = iE & (!( X (!(input = iD) U input = iB)) |  X (!(input = iD) U (input = iB & (TRUE U output = oW))))) U input = iD)))  is true
+-- specification !(!FALSE U !(output = oR & (!(!(input = iO)) | !(!(input = iN | input = iO) U !(!(output = oQ) | (input = iN | input = iO))))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 6.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 6.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 6.3 <-
+    input = iD
+    output = null
+  -> State: 6.4 <-
+    state = s2
+    input = null
+    output = oX
+  -> State: 6.5 <-
+    input = iI
+    output = null
+  -> State: 6.6 <-
+    state = s11
+    input = null
+    output = oS
+  -> State: 6.7 <-
+    input = iO
+    output = null
+  -> State: 6.8 <-
+    state = s6
+    input = null
+    output = oS
+  -- Loop starts here
+  -> State: 6.9 <-
+    input = iL
+    output = null
+  -> State: 6.10 <-
+    input = null
+    output = oP
+  -> State: 6.11 <-
+    input = iL
+    output = null
+-- specification (!(TRUE U input = iE) | ((!(input = iL) | (!(input = iE) U (output = oS & !(input = iE)))) U input = iE))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 7.1 <-
+    state = s0
+    input = iL
+    output = null
+  -> State: 7.2 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 7.3 <-
+    input = iE
+    output = null
+  -> State: 7.4 <-
+    state = s5
+    input = null
+    output = oZ
+  -> State: 7.5 <-
+    input = iF
+    output = null
+  -> State: 7.6 <-
+    state = s6
+    input = null
+    output = oS
+  -- Loop starts here
+  -> State: 7.7 <-
+    input = iL
+    output = null
+  -> State: 7.8 <-
+    input = null
+    output = oP
+  -> State: 7.9 <-
+    input = iL
+    output = null
+-- specification !(!FALSE U !(!(output = oP & (TRUE U output = oW)) | (!((output = oT & !(output = oW)) &  X (!(output = oW) U (output = oZ & !(output = oW)))) U (output = oW | output = oR))))  is true
+-- specification !(!FALSE U !(!(output = oU) | !(!FALSE U !(!(input = iN) | ((output = oX & !(output = oS)) &  X (!(output = oS) U output = oV))))))  is true
+-- specification !(!FALSE U !(input = iN & (!( X (TRUE U input = iL)) |  X (TRUE U (input = iL & (TRUE U output = oW))))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 8.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 8.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 8.3 <-
+    input = iI
+    output = null
+  -> State: 8.4 <-
+    state = s3
+    input = null
+    output = oX
+  -> State: 8.5 <-
+    input = iL
+    output = null
+  -> State: 8.6 <-
+    state = s6
+    input = null
+    output = oZ
+  -> State: 8.7 <-
+    input = iL
+    output = null
+  -- Loop starts here
+  -> State: 8.8 <-
+    input = null
+    output = oP
+  -> State: 8.9 <-
+    input = iL
+    output = null
+  -> State: 8.10 <-
+    input = null
+    output = oP
+-- specification !(!FALSE U !(!(input = iI & (TRUE U output = oT)) | ((!(input = iK) | (!(output = oT) U (((output = oX & !(output = oT)) & !(output = oU)) &  X ((!(output = oT) & !(output = oU)) U output = oZ)))) U output = oT)))  is true
+-- specification !(!FALSE U !(!(input = iK) | ((!(input = iF) | (!(output = oP) U (((output = oX & !(output = oP)) & !(output = oQ)) &  X ((!(output = oP) & !(output = oQ)) U output = oZ)))) U (output = oP | !(!FALSE U !(!(input = iF) | ((output = oX & !(output = oQ)) &  X (!(output = oQ) U output = oZ))))))))  is true
+-- specification !(!FALSE U !(!((output = oS & !(input = iK)) & (TRUE U input = iK)) | (!(output = oY) U (input = iF | input = iK))))  is true
+-- specification !(!FALSE U !(!(input = iC) | !(!FALSE U !(input = iO & (!( X (TRUE U input = iN)) |  X (!(input = iN) U (input = iN & (TRUE U output = oV))))))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 9.1 <-
+    state = s0
+    input = iL
+    output = null
+  -> State: 9.2 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 9.3 <-
+    input = iI
+    output = null
+  -> State: 9.4 <-
+    state = s7
+    input = null
+    output = oV
+  -> State: 9.5 <-
+    input = iA
+    output = null
+  -> State: 9.6 <-
+    state = s14
+    input = null
+    output = oZ
+  -> State: 9.7 <-
+    input = iC
+    output = null
+  -> State: 9.8 <-
+    state = s15
+    input = null
+    output = oZ
+  -> State: 9.9 <-
+    input = iI
+    output = null
+  -> State: 9.10 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 9.11 <-
+    input = iE
+    output = null
+  -> State: 9.12 <-
+    state = s5
+    input = null
+    output = oZ
+  -> State: 9.13 <-
+    input = iN
+    output = null
+  -> State: 9.14 <-
+    state = s6
+    input = null
+    output = oV
+  -- Loop starts here
+  -> State: 9.15 <-
+    input = iL
+    output = null
+  -> State: 9.16 <-
+    input = null
+    output = oP
+  -> State: 9.17 <-
+    input = iL
+    output = null
+-- specification (!(!FALSE U !(!(output = oY))) | (!(output = oY) U (output = oY & (!(TRUE U (output = oQ &  X (TRUE U output = oV))) | (!(output = oQ) U input = iD)))))  is true
+-- specification (!(!FALSE U !(!(input = iJ))) | (!(input = iJ) U (input = iJ & (!(TRUE U output = oQ) | (!(output = oQ) U ((output = oZ & !(output = oQ)) &  X (!(output = oQ) U input = iN)))))))  is true
+-- specification !(!FALSE U !(input = iF & (!(!(input = iK)) | !(!(input = iL | input = iK) U !(!(output = oX) | (input = iL | input = iK))))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 10.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 10.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 10.3 <-
+    input = iD
+    output = null
+  -> State: 10.4 <-
+    state = s2
+    input = null
+    output = oX
+  -> State: 10.5 <-
+    input = iI
+    output = null
+  -> State: 10.6 <-
+    state = s11
+    input = null
+    output = oS
+  -> State: 10.7 <-
+    input = iO
+    output = null
+  -> State: 10.8 <-
+    state = s6
+    input = null
+    output = oS
+  -- Loop starts here
+  -> State: 10.9 <-
+    input = iL
+    output = null
+  -> State: 10.10 <-
+    input = null
+    output = oP
+  -> State: 10.11 <-
+    input = iL
+    output = null
+-- specification !(!FALSE U !(!(input = iE) | (TRUE U output = oZ)))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 11.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 11.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 11.3 <-
+    input = iI
+    output = null
+  -> State: 11.4 <-
+    state = s3
+    input = null
+    output = oX
+  -> State: 11.5 <-
+    input = iJ
+    output = null
+  -> State: 11.6 <-
+    state = s12
+    input = null
+    output = oV
+  -> State: 11.7 <-
+    input = iE
+    output = null
+  -> State: 11.8 <-
+    state = s13
+    input = null
+    output = oT
+  -> State: 11.9 <-
+    input = iE
+    output = null
+  -> State: 11.10 <-
+    input = null
+    output = oS
+  -- Loop starts here
+  -> State: 11.11 <-
+    input = iO
+    output = null
+  -> State: 11.12 <-
+    input = null
+    output = oV
+  -> State: 11.13 <-
+    input = iO
+    output = null
+-- specification !(!FALSE U !(!(input = iJ) | (TRUE U output = oV)))  is true
+-- specification (!(TRUE U output = oU) | ((!(input = iC) | (!(output = oU) U (((output = oR & !(output = oU)) & !(output = oV)) &  X ((!(output = oU) & !(output = oV)) U output = oW)))) U output = oU))  is true
+-- specification (!(TRUE U input = iI) | ((!(input = iO) | (!(input = iI) U (((output = oT & !(input = iI)) & !(output = oR)) &  X ((!(input = iI) & !(output = oR)) U output = oZ)))) U input = iI))  is true
+-- specification (!(TRUE U output = oX) | (!((output = oW & !(output = oX)) &  X (!(output = oX) U (output = oQ & !(output = oX)))) U (output = oX | output = oT)))  is true
+-- specification !(!FALSE U !(!(output = oU) | !(!FALSE U !(!(input = iH) | (TRUE U output = oP)))))  is true
+-- specification !(!FALSE U !(!(output = oV) | ((input = iJ & (!( X (!(input = iH) U input = iA)) |  X (!(input = iH) U (input = iA & (TRUE U output = oP))))) U (input = iH | !(!FALSE U !(input = iJ & (!( X (!(input = iH) U input = iA)) |  X (!(input = iH) U (input = iA & (TRUE U output = oP))))))))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 12.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 12.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 12.3 <-
+    input = iI
+    output = null
+  -> State: 12.4 <-
+    state = s3
+    input = null
+    output = oX
+  -> State: 12.5 <-
+    input = iJ
+    output = null
+  -> State: 12.6 <-
+    state = s12
+    input = null
+    output = oV
+  -> State: 12.7 <-
+    input = iA
+    output = null
+  -> State: 12.8 <-
+    state = s6
+    input = null
+    output = oS
+  -- Loop starts here
+  -> State: 12.9 <-
+    input = iL
+    output = null
+  -> State: 12.10 <-
+    input = null
+    output = oP
+  -> State: 12.11 <-
+    input = iL
+    output = null
+-- specification !(!FALSE U !(!(input = iH) | !(!FALSE U !(input = iG & (!( X (TRUE U input = iF)) |  X (!(input = iF) U (input = iF & (TRUE U output = oZ))))))))  is true
+-- specification !(!FALSE U !(!(output = oQ & (TRUE U input = iD)) | (!(output = oW) U (input = iD | ((input = iI & !(output = oW)) &  X (!(output = oW) U input = iM))))))  is true
+-- specification (!(TRUE U output = oT) | (!(output = oT) U ((input = iG & !(output = oT)) &  X (!(output = oT) U output = oV))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 13.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 13.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 13.3 <-
+    input = iI
+    output = null
+  -> State: 13.4 <-
+    state = s3
+    input = null
+    output = oX
+  -> State: 13.5 <-
+    input = iJ
+    output = null
+  -> State: 13.6 <-
+    state = s12
+    input = null
+    output = oV
+  -> State: 13.7 <-
+    input = iE
+    output = null
+  -> State: 13.8 <-
+    state = s13
+    input = null
+    output = oT
+  -- Loop starts here
+  -> State: 13.9 <-
+    input = iC
+    output = null
+  -> State: 13.10 <-
+    input = null
+    output = oT
+  -> State: 13.11 <-
+    input = iC
+    output = null
+-- specification (!(TRUE U output = oW) | (!(output = oW) U ((input = iB & !(output = oW)) &  X (!(output = oW) U input = iE))))  is true
+-- specification !(!FALSE U !(!(output = oV) | (!(TRUE U output = oY) | (!(output = oY) U (output = oU | ((input = iI & !(output = oY)) &  X (!(output = oY) U input = iF)))))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 14.1 <-
+    state = s0
+    input = iL
+    output = null
+  -> State: 14.2 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 14.3 <-
+    input = iI
+    output = null
+  -> State: 14.4 <-
+    state = s7
+    input = null
+    output = oV
+  -> State: 14.5 <-
+    input = iL
+    output = null
+  -> State: 14.6 <-
+    state = s8
+    input = null
+    output = oT
+  -> State: 14.7 <-
+    input = iF
+    output = null
+  -> State: 14.8 <-
+    state = s16
+    input = null
+    output = oT
+  -> State: 14.9 <-
+    input = iG
+    output = null
+  -> State: 14.10 <-
+    state = s6
+    input = null
+    output = oY
+  -- Loop starts here
+  -> State: 14.11 <-
+    input = iL
+    output = null
+  -> State: 14.12 <-
+    input = null
+    output = oP
+  -> State: 14.13 <-
+    input = iL
+    output = null
+-- specification !(!FALSE U !(!(input = iI & (TRUE U input = iK)) | (!(output = oS) U (input = iK | ((output = oW & !(output = oS)) &  X (!(output = oS) U output = oX))))))  is true
+-- specification !(!FALSE U !(input = iN & (!( X (TRUE U input = iM)) |  X (TRUE U (input = iM & (TRUE U output = oT))))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 15.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 15.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 15.3 <-
+    input = iD
+    output = null
+  -> State: 15.4 <-
+    state = s2
+    input = null
+    output = oX
+  -> State: 15.5 <-
+    input = iI
+    output = null
+  -> State: 15.6 <-
+    state = s11
+    input = null
+    output = oS
+  -> State: 15.7 <-
+    input = iO
+    output = null
+  -> State: 15.8 <-
+    state = s6
+    input = null
+    output = oS
+  -- Loop starts here
+  -> State: 15.9 <-
+    input = iL
+    output = null
+  -> State: 15.10 <-
+    input = null
+    output = oP
+  -> State: 15.11 <-
+    input = iL
+    output = null
+-- specification !(!FALSE U !(!((input = iH & !(input = iI)) & (TRUE U input = iI)) | (!(output = oY) U (input = iB | input = iI))))  is true
+-- specification (!(TRUE U output = oX) | (!(output = oX) U ((output = oU & !(output = oX)) &  X (!(output = oX) U input = iF))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 16.1 <-
+    state = s0
+    input = iL
+    output = null
+  -> State: 16.2 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 16.3 <-
+    input = iI
+    output = null
+  -> State: 16.4 <-
+    state = s7
+    input = null
+    output = oV
+  -> State: 16.5 <-
+    input = iF
+    output = null
+  -> State: 16.6 <-
+    state = s9
+    input = null
+    output = oV
+  -> State: 16.7 <-
+    input = iF
+    output = null
+  -> State: 16.8 <-
+    state = s10
+    input = null
+    output = oX
+  -- Loop starts here
+  -> State: 16.9 <-
+    input = iI
+    output = null
+  -> State: 16.10 <-
+    state = s7
+    input = null
+    output = oY
+  -> State: 16.11 <-
+    input = iF
+    output = null
+  -> State: 16.12 <-
+    state = s9
+    input = null
+    output = oV
+  -> State: 16.13 <-
+    input = iF
+    output = null
+  -> State: 16.14 <-
+    state = s10
+    input = null
+    output = oX
+  -> State: 16.15 <-
+    input = iI
+    output = null
+-- specification !(!FALSE U !(!(input = iL & (TRUE U input = iG)) | (!((output = oW & !(input = iG)) &  X (!(input = iG) U (output = oY & !(input = iG)))) U (input = iG | output = oQ))))  is true
+-- specification (!(TRUE U input = iC) | ((!(input = iD) | (!(input = iC) U (output = oP & !(input = iC)))) U input = iC))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 17.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 17.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 17.3 <-
+    input = iI
+    output = null
+  -> State: 17.4 <-
+    state = s3
+    input = null
+    output = oX
+  -> State: 17.5 <-
+    input = iJ
+    output = null
+  -> State: 17.6 <-
+    state = s12
+    input = null
+    output = oV
+  -> State: 17.7 <-
+    input = iE
+    output = null
+  -- Loop starts here
+  -> State: 17.8 <-
+    state = s13
+    input = null
+    output = oT
+  -> State: 17.9 <-
+    input = iC
+    output = null
+  -- Loop starts here
+  -> State: 17.10 <-
+    input = null
+    output = oT
+  -> State: 17.11 <-
+    input = iC
+    output = null
+  -> State: 17.12 <-
+    input = null
+    output = oT
+-- specification (!(TRUE U input = iF) | ((!(input = iA) | (!(input = iF) U ((output = oT & !(input = iF)) &  X (!(input = iF) U output = oU)))) U input = iF))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 18.1 <-
+    state = s0
+    input = iL
+    output = null
+  -> State: 18.2 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 18.3 <-
+    input = iI
+    output = null
+  -> State: 18.4 <-
+    state = s7
+    input = null
+    output = oV
+  -> State: 18.5 <-
+    input = iA
+    output = null
+  -> State: 18.6 <-
+    state = s14
+    input = null
+    output = oZ
+  -> State: 18.7 <-
+    input = iC
+    output = null
+  -> State: 18.8 <-
+    state = s15
+    input = null
+    output = oZ
+  -> State: 18.9 <-
+    input = iI
+    output = null
+  -> State: 18.10 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 18.11 <-
+    input = iI
+    output = null
+  -> State: 18.12 <-
+    state = s7
+    input = null
+    output = oV
+  -> State: 18.13 <-
+    input = iF
+    output = null
+  -- Loop starts here
+  -> State: 18.14 <-
+    state = s9
+    input = null
+    output = oV
+  -> State: 18.15 <-
+    input = iF
+    output = null
+  -> State: 18.16 <-
+    state = s10
+    input = null
+    output = oX
+  -> State: 18.17 <-
+    input = iI
+    output = null
+  -> State: 18.18 <-
+    state = s7
+    input = null
+    output = oY
+  -> State: 18.19 <-
+    input = iA
+    output = null
+  -> State: 18.20 <-
+    state = s14
+    input = null
+    output = oZ
+  -> State: 18.21 <-
+    input = iC
+    output = null
+  -> State: 18.22 <-
+    state = s15
+    input = null
+    output = oZ
+  -> State: 18.23 <-
+    input = iI
+    output = null
+  -> State: 18.24 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 18.25 <-
+    input = iI
+    output = null
+  -> State: 18.26 <-
+    state = s7
+    input = null
+    output = oV
+  -> State: 18.27 <-
+    input = iF
+    output = null
+  -> State: 18.28 <-
+    state = s9
+    input = null
+    output = oV
+-- specification !(!FALSE U !(!(input = iD & (TRUE U input = iJ)) | ((input = iA & (!( X (!(input = iJ) U input = iI)) |  X (!(input = iJ) U (input = iI & (TRUE U output = oW))))) U input = iJ)))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 19.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 19.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 19.3 <-
+    input = iI
+    output = null
+  -> State: 19.4 <-
+    state = s3
+    input = null
+    output = oX
+  -> State: 19.5 <-
+    input = iJ
+    output = null
+  -> State: 19.6 <-
+    state = s12
+    input = null
+    output = oV
+  -> State: 19.7 <-
+    input = iA
+    output = null
+  -> State: 19.8 <-
+    state = s6
+    input = null
+    output = oS
+  -- Loop starts here
+  -> State: 19.9 <-
+    input = iL
+    output = null
+  -> State: 19.10 <-
+    input = null
+    output = oP
+  -> State: 19.11 <-
+    input = iL
+    output = null
+-- specification (!(TRUE U input = iB) | ((!(input = iA) | (!(input = iB) U (((output = oV & !(input = iB)) & !(output = oX)) &  X ((!(input = iB) & !(output = oX)) U output = oP)))) U input = iB))  is true
+-- specification !(!FALSE U !(!(output = oW) | !(!FALSE U !(!(input = iG) | (output = oS &  X (TRUE U output = oQ))))))  is true
+-- specification !(!FALSE U !(!(input = iN) | (TRUE U output = oY)))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 20.1 <-
+    state = s0
+    input = iL
+    output = null
+  -> State: 20.2 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 20.3 <-
+    input = iI
+    output = null
+  -> State: 20.4 <-
+    state = s7
+    input = null
+    output = oV
+  -> State: 20.5 <-
+    input = iF
+    output = null
+  -> State: 20.6 <-
+    state = s9
+    input = null
+    output = oV
+  -> State: 20.7 <-
+    input = iF
+    output = null
+  -> State: 20.8 <-
+    state = s10
+    input = null
+    output = oX
+  -> State: 20.9 <-
+    input = iI
+    output = null
+  -> State: 20.10 <-
+    state = s7
+    input = null
+    output = oY
+  -> State: 20.11 <-
+    input = iA
+    output = null
+  -> State: 20.12 <-
+    state = s14
+    input = null
+    output = oZ
+  -> State: 20.13 <-
+    input = iC
+    output = null
+  -> State: 20.14 <-
+    state = s15
+    input = null
+    output = oZ
+  -> State: 20.15 <-
+    input = iI
+    output = null
+  -> State: 20.16 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 20.17 <-
+    input = iE
+    output = null
+  -> State: 20.18 <-
+    state = s5
+    input = null
+    output = oZ
+  -> State: 20.19 <-
+    input = iN
+    output = null
+  -> State: 20.20 <-
+    state = s6
+    input = null
+    output = oV
+  -- Loop starts here
+  -> State: 20.21 <-
+    input = iL
+    output = null
+  -> State: 20.22 <-
+    input = null
+    output = oP
+  -> State: 20.23 <-
+    input = iL
+    output = null
+-- specification !(!FALSE U !(!(input = iM) | (TRUE U (output = oV &  X (TRUE U output = oR)))))  is true
+-- specification !(!FALSE U !(!(input = iO & (TRUE U input = iK)) | (!((output = oV & !(input = iK)) &  X (!(input = iK) U (output = oQ & !(input = iK)))) U (input = iK | input = iB))))  is true
+-- specification (!(TRUE U (output = oX &  X (TRUE U output = oP))) | (!(output = oX) U output = oV))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 21.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 21.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 21.3 <-
+    input = iI
+    output = null
+  -> State: 21.4 <-
+    state = s3
+    input = null
+    output = oX
+  -> State: 21.5 <-
+    input = iL
+    output = null
+  -> State: 21.6 <-
+    state = s6
+    input = null
+    output = oZ
+  -- Loop starts here
+  -> State: 21.7 <-
+    input = iL
+    output = null
+  -> State: 21.8 <-
+    input = null
+    output = oP
+  -- Loop starts here
+  -> State: 21.9 <-
+    input = iL
+    output = null
+  -> State: 21.10 <-
+    input = null
+    output = oP
+  -> State: 21.11 <-
+    input = iL
+    output = null
+-- specification !(!FALSE U !(!(input = iB) | !(!FALSE U !(!(input = iO) | (TRUE U output = oS)))))  is true
+-- specification !(!(input = iA) U !(!(output = oP) | input = iA))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 22.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 22.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 22.3 <-
+    input = iI
+    output = null
+  -> State: 22.4 <-
+    state = s3
+    input = null
+    output = oX
+  -> State: 22.5 <-
+    input = iL
+    output = null
+  -> State: 22.6 <-
+    state = s6
+    input = null
+    output = oZ
+  -- Loop starts here
+  -> State: 22.7 <-
+    input = iL
+    output = null
+  -> State: 22.8 <-
+    input = null
+    output = oP
+  -- Loop starts here
+  -> State: 22.9 <-
+    input = iL
+    output = null
+  -> State: 22.10 <-
+    input = null
+    output = oP
+  -> State: 22.11 <-
+    input = iL
+    output = null
+-- specification (!(TRUE U (output = oQ &  X (TRUE U output = oS))) | (!(output = oQ) U input = iI))  is true
+-- specification (!(TRUE U input = iC) | (!((output = oS & !(input = iC)) &  X (!(input = iC) U (output = oR & !(input = iC)))) U (input = iC | input = iF)))  is true
+-- specification (!(TRUE U input = iA) | (!(output = oZ) U (input = iA | ((input = iL & !(output = oZ)) &  X (!(output = oZ) U input = iO)))))  is true
+-- specification !(!FALSE U !(!(output = oV) | !(!FALSE U !(!(input = iH) | (output = oP &  X (TRUE U output = oR))))))  is true
+-- specification !(!FALSE U !(!(input = iC & (TRUE U input = iN)) | ((!(input = iE) | (!(input = iN) U ((output = oS & !(input = iN)) &  X (!(input = iN) U output = oR)))) U input = iN)))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 23.1 <-
+    state = s0
+    input = iL
+    output = null
+  -> State: 23.2 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 23.3 <-
+    input = iI
+    output = null
+  -> State: 23.4 <-
+    state = s7
+    input = null
+    output = oV
+  -> State: 23.5 <-
+    input = iA
+    output = null
+  -> State: 23.6 <-
+    state = s14
+    input = null
+    output = oZ
+  -> State: 23.7 <-
+    input = iC
+    output = null
+  -> State: 23.8 <-
+    state = s15
+    input = null
+    output = oZ
+  -> State: 23.9 <-
+    input = iI
+    output = null
+  -> State: 23.10 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 23.11 <-
+    input = iE
+    output = null
+  -> State: 23.12 <-
+    state = s5
+    input = null
+    output = oZ
+  -> State: 23.13 <-
+    input = iN
+    output = null
+  -> State: 23.14 <-
+    state = s6
+    input = null
+    output = oV
+  -- Loop starts here
+  -> State: 23.15 <-
+    input = iL
+    output = null
+  -> State: 23.16 <-
+    input = null
+    output = oP
+  -> State: 23.17 <-
+    input = iL
+    output = null
+-- specification !(!FALSE U !(!(input = iH) | (TRUE U (output = oR &  X (TRUE U output = oW)))))  is true
+-- specification !(!FALSE U !(!(input = iB) | !(!FALSE U !(!(input = iF) | ((output = oV & !(output = oY)) &  X (!(output = oY) U output = oP))))))  is true
+-- specification !(!FALSE U !(output = oY & (!(!(input = iM)) | !(!(input = iC | input = iM) U !(!(output = oZ) | (input = iC | input = iM))))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 24.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 24.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 24.3 <-
+    input = iD
+    output = null
+  -> State: 24.4 <-
+    state = s2
+    input = null
+    output = oX
+  -> State: 24.5 <-
+    input = iI
+    output = null
+  -> State: 24.6 <-
+    state = s11
+    input = null
+    output = oS
+  -> State: 24.7 <-
+    input = iO
+    output = null
+  -> State: 24.8 <-
+    state = s6
+    input = null
+    output = oS
+  -- Loop starts here
+  -> State: 24.9 <-
+    input = iL
+    output = null
+  -> State: 24.10 <-
+    input = null
+    output = oP
+  -> State: 24.11 <-
+    input = iL
+    output = null
+-- specification !(!FALSE U !(!(output = oQ) | (!(TRUE U output = oZ) | (!(output = oZ) U (output = oX | ((input = iH & !(output = oZ)) &  X (!(output = oZ) U output = oU)))))))  is true
+-- specification !(!FALSE U !(output = oT & (!(!(output = oY)) | !(!(input = iA | output = oY) U !(!(output = oZ) | (input = iA | output = oY))))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 25.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 25.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 25.3 <-
+    input = iD
+    output = null
+  -> State: 25.4 <-
+    state = s2
+    input = null
+    output = oX
+  -> State: 25.5 <-
+    input = iI
+    output = null
+  -> State: 25.6 <-
+    state = s11
+    input = null
+    output = oS
+  -> State: 25.7 <-
+    input = iO
+    output = null
+  -> State: 25.8 <-
+    state = s6
+    input = null
+    output = oS
+  -- Loop starts here
+  -> State: 25.9 <-
+    input = iL
+    output = null
+  -> State: 25.10 <-
+    input = null
+    output = oP
+  -> State: 25.11 <-
+    input = iL
+    output = null
+-- specification (!(!FALSE U !(!(output = oU))) | (!(output = oU) U (output = oU & (!(TRUE U output = oY) | (!(output = oY) U ((input = iN & !(output = oY)) &  X (!(output = oY) U input = iJ)))))))  is true
+-- specification !(!(output = oU) U !(!(output = oW) | output = oU))  is true
+-- specification !(!FALSE U !(!(input = iN & (TRUE U output = oX)) | (!(output = oY) U (output = oX | ((input = iF & !(output = oY)) &  X (!(output = oY) U output = oS))))))  is true
+-- specification !(!FALSE U !(!(input = iM & (TRUE U input = iN)) | ((!(input = iA) | (!(input = iN) U (((output = oR & !(input = iN)) & !(output = oT)) &  X ((!(input = iN) & !(output = oT)) U output = oX)))) U input = iN)))  is true
+-- specification !(!FALSE U !(input = iA & (!( X (TRUE U input = iE)) |  X (TRUE U (input = iE & (TRUE U output = oP))))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 26.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 26.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 26.3 <-
+    input = iI
+    output = null
+  -> State: 26.4 <-
+    state = s3
+    input = null
+    output = oX
+  -> State: 26.5 <-
+    input = iJ
+    output = null
+  -> State: 26.6 <-
+    state = s12
+    input = null
+    output = oV
+  -> State: 26.7 <-
+    input = iE
+    output = null
+  -- Loop starts here
+  -> State: 26.8 <-
+    state = s13
+    input = null
+    output = oT
+  -> State: 26.9 <-
+    input = iE
+    output = null
+  -> State: 26.10 <-
+    input = null
+    output = oS
+  -> State: 26.11 <-
+    input = iC
+    output = null
+  -> State: 26.12 <-
+    input = null
+    output = oT
+-- specification !(!FALSE U !(!(output = oY) | !(!FALSE U !(!(input = iF) | (TRUE U output = oQ)))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 27.1 <-
+    state = s0
+    input = iL
+    output = null
+  -> State: 27.2 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 27.3 <-
+    input = iI
+    output = null
+  -> State: 27.4 <-
+    state = s7
+    input = null
+    output = oV
+  -> State: 27.5 <-
+    input = iF
+    output = null
+  -> State: 27.6 <-
+    state = s9
+    input = null
+    output = oV
+  -> State: 27.7 <-
+    input = iF
+    output = null
+  -> State: 27.8 <-
+    state = s10
+    input = null
+    output = oX
+  -> State: 27.9 <-
+    input = iI
+    output = null
+  -> State: 27.10 <-
+    state = s7
+    input = null
+    output = oY
+  -> State: 27.11 <-
+    input = iF
+    output = null
+  -> State: 27.12 <-
+    state = s9
+    input = null
+    output = oV
+  -> State: 27.13 <-
+    input = iF
+    output = null
+  -> State: 27.14 <-
+    state = s10
+    input = null
+    output = oX
+  -> State: 27.15 <-
+    input = iI
+    output = null
+  -> State: 27.16 <-
+    state = s7
+    input = null
+    output = oY
+  -> State: 27.17 <-
+    input = iL
+    output = null
+  -> State: 27.18 <-
+    state = s8
+    input = null
+    output = oT
+  -> State: 27.19 <-
+    input = iK
+    output = null
+  -> State: 27.20 <-
+    state = s6
+    input = null
+    output = oS
+  -- Loop starts here
+  -> State: 27.21 <-
+    input = iL
+    output = null
+  -> State: 27.22 <-
+    input = null
+    output = oP
+  -> State: 27.23 <-
+    input = iL
+    output = null
+-- specification (!(TRUE U input = iE) | ((!(input = iF) | (!(input = iE) U ((output = oY & !(input = iE)) &  X (!(input = iE) U output = oQ)))) U input = iE))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 28.1 <-
+    state = s0
+    input = iL
+    output = null
+  -> State: 28.2 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 28.3 <-
+    input = iI
+    output = null
+  -> State: 28.4 <-
+    state = s7
+    input = null
+    output = oV
+  -> State: 28.5 <-
+    input = iF
+    output = null
+  -> State: 28.6 <-
+    state = s9
+    input = null
+    output = oV
+  -> State: 28.7 <-
+    input = iF
+    output = null
+  -> State: 28.8 <-
+    state = s10
+    input = null
+    output = oX
+  -> State: 28.9 <-
+    input = iI
+    output = null
+  -> State: 28.10 <-
+    state = s7
+    input = null
+    output = oY
+  -> State: 28.11 <-
+    input = iA
+    output = null
+  -> State: 28.12 <-
+    state = s14
+    input = null
+    output = oZ
+  -> State: 28.13 <-
+    input = iC
+    output = null
+  -> State: 28.14 <-
+    state = s15
+    input = null
+    output = oZ
+  -> State: 28.15 <-
+    input = iI
+    output = null
+  -> State: 28.16 <-
+    state = s4
+    input = null
+    output = oP
+  -> State: 28.17 <-
+    input = iE
+    output = null
+  -> State: 28.18 <-
+    state = s5
+    input = null
+    output = oZ
+  -> State: 28.19 <-
+    input = iF
+    output = null
+  -> State: 28.20 <-
+    state = s6
+    input = null
+    output = oS
+  -- Loop starts here
+  -> State: 28.21 <-
+    input = iL
+    output = null
+  -> State: 28.22 <-
+    input = null
+    output = oP
+  -> State: 28.23 <-
+    input = iL
+    output = null
+-- specification (!(TRUE U input = iD) | ((!(input = iE) | (!(input = iD) U (output = oW & !(input = iD)))) U input = iD))  is true
+-- specification (!(!FALSE U !(!(input = iH))) | (!(input = iH) U (input = iH & (!(TRUE U (output = oZ &  X (TRUE U output = oX))) | (!(output = oZ) U input = iN)))))  is true
+-- specification !(!FALSE U !(!(input = iJ) | (!(TRUE U output = oY) | (!(output = oY) U (input = iD | ((output = oT & !(output = oY)) &  X (!(output = oY) U output = oW)))))))  is true
+-- specification !(!FALSE U !(!(input = iL & (TRUE U output = oU)) | (!(output = oR) U (output = oU | ((output = oV & !(output = oR)) &  X (!(output = oR) U input = iF))))))  is true
+-- specification !(!FALSE U !(!((output = oY & !(output = oW)) & (TRUE U output = oW)) | ((!(input = iH) | (!(output = oW) U (output = oS & !(output = oW)))) U output = oW)))  is true
+-- specification !(!FALSE U !(!(input = iM) | (TRUE U (output = oZ &  X (TRUE U output = oR)))))  is true
+-- specification (!(TRUE U (output = oS &  X (TRUE U output = oX))) | (!(output = oS) U output = oZ))  is true
+-- specification !(!FALSE U !(!(input = iL & (TRUE U output = oU)) | (!((output = oS & !(output = oU)) &  X (!(output = oU) U (output = oW & !(output = oU)))) U (output = oU | input = iK))))  is true
+-- specification !(!FALSE U !(!(input = iO) | ((!(input = iK) | (!(output = oW) U ((output = oV & !(output = oW)) &  X (!(output = oW) U output = oU)))) U (output = oW | !(!FALSE U !(!(input = iK) | (output = oV &  X (TRUE U output = oU))))))))  is true
+-- specification (!(!FALSE U !(!(output = oQ))) | (!(output = oQ) U (output = oQ & (!(TRUE U (output = oR &  X (TRUE U output = oS))) | (!(output = oR) U output = oX)))))  is true
+-- specification !(!FALSE U !(!(input = iJ) | ((!(input = iA) | (!(input = iB) U (((output = oR & !(input = iB)) & !(output = oW)) &  X ((!(input = iB) & !(output = oW)) U output = oV)))) U (input = iB | !(!FALSE U !(!(input = iA) | ((output = oR & !(output = oW)) &  X (!(output = oW) U output = oV))))))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 29.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 29.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 29.3 <-
+    input = iI
+    output = null
+  -> State: 29.4 <-
+    state = s3
+    input = null
+    output = oX
+  -> State: 29.5 <-
+    input = iJ
+    output = null
+  -> State: 29.6 <-
+    state = s12
+    input = null
+    output = oV
+  -> State: 29.7 <-
+    input = iA
+    output = null
+  -> State: 29.8 <-
+    state = s6
+    input = null
+    output = oS
+  -- Loop starts here
+  -> State: 29.9 <-
+    input = iL
+    output = null
+  -> State: 29.10 <-
+    input = null
+    output = oP
+  -> State: 29.11 <-
+    input = iL
+    output = null
+-- specification !(!FALSE U !(!((output = oX & !(output = oT)) & (TRUE U output = oT)) | ((!(input = iE) | (!(output = oT) U (output = oY & !(output = oT)))) U output = oT)))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 30.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 30.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 30.3 <-
+    input = iI
+    output = null
+  -> State: 30.4 <-
+    state = s3
+    input = null
+    output = oX
+  -> State: 30.5 <-
+    input = iJ
+    output = null
+  -> State: 30.6 <-
+    state = s12
+    input = null
+    output = oV
+  -> State: 30.7 <-
+    input = iE
+    output = null
+  -> State: 30.8 <-
+    state = s13
+    input = null
+    output = oT
+  -- Loop starts here
+  -> State: 30.9 <-
+    input = iE
+    output = null
+  -> State: 30.10 <-
+    input = null
+    output = oS
+  -> State: 30.11 <-
+    input = iC
+    output = null
+  -> State: 30.12 <-
+    input = null
+    output = oT
+  -> State: 30.13 <-
+    input = iE
+    output = null
+-- specification (!(TRUE U input = iD) | ((input = iG & (!( X (!(input = iD) U input = iC)) |  X (!(input = iD) U (input = iC & (TRUE U output = oT))))) U input = iD))  is true
+-- specification !(!(input = iE) U !(!(output = oU) | input = iE))  is true
+-- specification !(!FALSE U !(input = iK & (!(!(output = oZ)) | !(!(output = oV | output = oZ) U !(!(output = oS) | (output = oV | output = oZ))))))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 31.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 31.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 31.3 <-
+    input = iD
+    output = null
+  -> State: 31.4 <-
+    state = s2
+    input = null
+    output = oX
+  -> State: 31.5 <-
+    input = iI
+    output = null
+  -> State: 31.6 <-
+    state = s11
+    input = null
+    output = oS
+  -> State: 31.7 <-
+    input = iE
+    output = null
+  -> State: 31.8 <-
+    state = s6
+    input = null
+    output = oR
+  -- Loop starts here
+  -> State: 31.9 <-
+    input = iL
+    output = null
+  -> State: 31.10 <-
+    input = null
+    output = oP
+  -> State: 31.11 <-
+    input = iL
+    output = null
+-- specification (!(TRUE U input = iL) | ((input = iI & (!( X (!(input = iL) U input = iH)) |  X (!(input = iL) U (input = iH & (TRUE U output = oV))))) U input = iL))  is false
+-- as demonstrated by the following execution sequence
+Trace Description: LTL Counterexample 
+Trace Type: Counterexample 
+  -> State: 32.1 <-
+    state = s0
+    input = iD
+    output = null
+  -> State: 32.2 <-
+    state = s1
+    input = null
+    output = oX
+  -> State: 32.3 <-
+    input = iI
+    output = null
+  -> State: 32.4 <-
+    state = s3
+    input = null
+    output = oX
+  -> State: 32.5 <-
+    input = iL
+    output = null
+  -> State: 32.6 <-
+    state = s6
+    input = null
+    output = oZ
+  -> State: 32.7 <-
+    input = iL
+    output = null
+  -- Loop starts here
+  -> State: 32.8 <-
+    input = null
+    output = oP
+  -> State: 32.9 <-
+    input = iL
+    output = null
+  -> State: 32.10 <-
+    input = null
+    output = oP
+-- specification !(!FALSE U !(!(output = oU) | !(!FALSE U !(input = iH & (!( X (TRUE U input = iN)) |  X (!(input = iN) U (input = iN & (TRUE U output = oS))))))))  is true
+-- specification !(!FALSE U !(!(output = oS & (TRUE U input = iJ)) | ((!(input = iB) | (!(input = iJ) U ((output = oR & !(input = iJ)) &  X (!(input = iJ) U output = oT)))) U input = iJ)))  is true
+-- specification !(!FALSE U !(!(input = iB) | ((!((output = oV & !(input = iJ)) &  X (!(input = iJ) U (output = oW & !(input = iJ)))) U (input = iJ | output = oY)) | !(!FALSE U !(!(output = oV &  X (TRUE U output = oW)))))))  is true
+-- specification (!(TRUE U input = iA) | (!(output = oU) U (output = oS | input = iA)))  is true
+-- specification !(!FALSE U !(!(output = oQ & (TRUE U output = oY)) | ((input = iA & (!( X (!(output = oY) U input = iO)) |  X (!(output = oY) U (input = iO & (TRUE U output = oZ))))) U output = oY)))  is true

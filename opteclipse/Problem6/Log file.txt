@@ -1,0 +1,86 @@
+model size 1
+0: Mon Apr 17 11:31:47 BST 2017
+Hypothesis size: 1 states
+learning queries/symbols: 15/15(15/15 this learning round)
+testing queries/symbols: 16/30(1/15 this testing round)
+
+model size 5
+1: Mon Apr 17 11:31:49 BST 2017
+Hypothesis size: 5 states
+learning queries/symbols: 159/508(143/478 this learning round)
+testing queries/symbols: 165/563(6/55 this testing round)
+
+model size 8
+2: Mon Apr 17 11:31:54 BST 2017
+Hypothesis size: 8 states
+learning queries/symbols: 369/1719(204/1156 this learning round)
+testing queries/symbols: 372/1737(3/18 this testing round)
+
+model size 16
+3: Mon Apr 17 11:32:07 BST 2017
+Hypothesis size: 16 states
+learning queries/symbols: 984/5047(612/3310 this learning round)
+testing queries/symbols: 991/5112(7/65 this testing round)
+
+model size 20
+4: Mon Apr 17 11:32:15 BST 2017
+Hypothesis size: 20 states
+learning queries/symbols: 1344/7260(353/2148 this learning round)
+testing queries/symbols: 1345/7264(1/4 this testing round)
+
+model size 34
+5: Mon Apr 17 11:32:50 BST 2017
+Hypothesis size: 34 states
+learning queries/symbols: 2826/16338(1481/9074 this learning round)
+testing queries/symbols: 2828/16355(2/17 this testing round)
+
+model size 37
+6: Mon Apr 17 11:32:58 BST 2017
+Hypothesis size: 37 states
+learning queries/symbols: 3192/18370(364/2015 this learning round)
+testing queries/symbols: 3198/18435(6/65 this testing round)
+
+model size 44
+7: Mon Apr 17 11:33:15 BST 2017
+Hypothesis size: 44 states
+learning queries/symbols: 4014/23165(816/4730 this learning round)
+testing queries/symbols: 4018/23201(4/36 this testing round)
+
+model size 48
+8: Mon Apr 17 11:33:26 BST 2017
+Hypothesis size: 48 states
+learning queries/symbols: 4594/26040(576/2839 this learning round)
+testing queries/symbols: 4604/26144(10/104 this testing round)
+
+model size 49
+9: Mon Apr 17 11:33:30 BST 2017
+Hypothesis size: 49 states
+learning queries/symbols: 4709/26841(105/697 this learning round)
+testing queries/symbols: 4711/26884(2/43 this testing round)
+
+model size 52
+10: Mon Apr 17 11:33:42 BST 2017
+Hypothesis size: 52 states
+learning queries/symbols: 5257/30555(546/3671 this learning round)
+testing queries/symbols: 5266/30637(9/82 this testing round)
+
+model size 54
+11: Mon Apr 17 11:33:47 BST 2017
+Hypothesis size: 54 states
+learning queries/symbols: 5464/31817(198/1180 this learning round)
+testing queries/symbols: 5484/32029(20/212 this testing round)
+
+model size 57
+12: Mon Apr 17 11:33:57 BST 2017
+Hypothesis size: 57 states
+learning queries/symbols: 5886/34876(402/2847 this learning round)
+testing queries/symbols: 5901/34987(15/111 this testing round)
+
+model size 64
+13: Mon Apr 17 11:34:19 BST 2017
+Hypothesis size: 64 states
+learning queries/symbols: 6822/40376(921/5389 this learning round)
+testing queries/symbols: 6855/40676(33/300 this testing round)
+
+Finished learning!
+

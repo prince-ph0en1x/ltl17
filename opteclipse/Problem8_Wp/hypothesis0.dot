@@ -1,0 +1,22 @@
+digraph g {
+__start0 [label="" shape="none"];
+
+	s0 [shape="circle" label="s0"];
+	s0 -> s0 [label="1 / Invalid input: 1;"];
+	s0 -> s0 [label="2 / Invalid input: 2;"];
+	s0 -> s0 [label="3 / Invalid input: 3;"];
+	s0 -> s0 [label="4 / Invalid input: 4;"];
+	s0 -> s0 [label="5 / Invalid input: 5;"];
+	s0 -> s0 [label="6 / 20;"];
+	s0 -> s0 [label="7 / Invalid input: 7;"];
+	s0 -> s0 [label="8 / Invalid input: 8;"];
+	s0 -> s0 [label="9 / Invalid input: 9;"];
+	s0 -> s0 [label="10 / 17;"];
+	s0 -> s0 [label="11 / 26;"];
+	s0 -> s0 [label="12 / 25;"];
+	s0 -> s0 [label="13 / Invalid input: 13;"];
+	s0 -> s0 [label="14 / Invalid input: 14;"];
+	s0 -> s0 [label="15 / Invalid input: 15;"];
+
+__start0 -> s0;
+}

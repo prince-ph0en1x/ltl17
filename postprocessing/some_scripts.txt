@@ -1,0 +1,9 @@
+# Along the way I learnt some powershell:
+
+for ($x=1; $x -le 9; $x++) { $n=$x; $i=@(0,5,5,10,10,10,20,20,20,20)[$x]; gc .\challenge\Problem$n\constraints-RERS16-$i.txt | .\postprocessing\LTL\dist\build\MainR2Nu\MainR2Nu.exe | out-file -Encoding ascii .\models\nusmv\Problem$n-LTL.smv }
+
+for ($x=1; $x -le 9; $x++) { $n=$x; cp Problem$n.smv Problem$n-Full.smv; gc Problem$n-LTL.smv | ac -Path Problem$n-Full.smv }
+
+for ($x=1; $x -le 9; $x++) { $n=$x; gc .\models\dot\Problem$n.dot | .\postprocessing\LTL\dist\build\MainDot2Nu\MainDot2Nu.exe | out-file -Encoding ascii .\models\nusmv\Problem$n.smv }
+
+for ($x=10; $x -le 18; $x++) { $n=$x; gc .\results\Problem$n.txt | .\postprocessing\LTL\dist\build\MainErr\MainErr.exe $n | out-file -Encoding ascii .\results\submission\Problem$n.csv }

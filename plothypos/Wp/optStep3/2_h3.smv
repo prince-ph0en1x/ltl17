@@ -1,0 +1,272 @@
+MODULE main
+VAR
+    state  : {s0, s1, s2, s3, s4, s5, s6, s7, s8};
+    input  : {iA, iB, iC, iD, iE, iF, iG, iH, iI, iJ, null};
+    output : {oInv, oO, oP, oQ, oR, oS, oT, oU, oV, oW, oX, oY, oZ, null};
+ASSIGN
+    init(state)  := s0;
+    init(output) := null;
+    next(state)  := case
+        state = s0 & input = iA : s0;
+        state = s0 & input = iB : s0;
+        state = s0 & input = iC : s0;
+        state = s0 & input = iD : s0;
+        state = s0 & input = iE : s1;
+        state = s0 & input = iF : s0;
+        state = s0 & input = iG : s1;
+        state = s0 & input = iH : s0;
+        state = s0 & input = iI : s6;
+        state = s0 & input = iJ : s0;
+        state = s1 & input = iA : s1;
+        state = s1 & input = iB : s1;
+        state = s1 & input = iC : s1;
+        state = s1 & input = iD : s1;
+        state = s1 & input = iE : s1;
+        state = s1 & input = iF : s1;
+        state = s1 & input = iG : s1;
+        state = s1 & input = iH : s2;
+        state = s1 & input = iI : s1;
+        state = s1 & input = iJ : s1;
+        state = s2 & input = iA : s2;
+        state = s2 & input = iB : s2;
+        state = s2 & input = iC : s2;
+        state = s2 & input = iD : s3;
+        state = s2 & input = iE : s2;
+        state = s2 & input = iF : s2;
+        state = s2 & input = iG : s2;
+        state = s2 & input = iH : s2;
+        state = s2 & input = iI : s2;
+        state = s2 & input = iJ : s2;
+        state = s3 & input = iA : s3;
+        state = s3 & input = iB : s3;
+        state = s3 & input = iC : s3;
+        state = s3 & input = iD : s4;
+        state = s3 & input = iE : s3;
+        state = s3 & input = iF : s3;
+        state = s3 & input = iG : s3;
+        state = s3 & input = iH : s3;
+        state = s3 & input = iI : s3;
+        state = s3 & input = iJ : s3;
+        state = s4 & input = iA : s4;
+        state = s4 & input = iB : s4;
+        state = s4 & input = iC : s4;
+        state = s4 & input = iD : s4;
+        state = s4 & input = iE : s4;
+        state = s4 & input = iF : s5;
+        state = s4 & input = iG : s4;
+        state = s4 & input = iH : s4;
+        state = s4 & input = iI : s4;
+        state = s4 & input = iJ : s4;
+        state = s5 & input = iA : s5;
+        state = s5 & input = iB : s5;
+        state = s5 & input = iC : s5;
+        state = s5 & input = iD : s1;
+        state = s5 & input = iE : s5;
+        state = s5 & input = iF : s5;
+        state = s5 & input = iG : s5;
+        state = s5 & input = iH : s5;
+        state = s5 & input = iI : s5;
+        state = s5 & input = iJ : s5;
+        state = s6 & input = iA : s6;
+        state = s6 & input = iB : s6;
+        state = s6 & input = iC : s6;
+        state = s6 & input = iD : s6;
+        state = s6 & input = iE : s6;
+        state = s6 & input = iF : s7;
+        state = s6 & input = iG : s6;
+        state = s6 & input = iH : s6;
+        state = s6 & input = iI : s6;
+        state = s6 & input = iJ : s6;
+        state = s7 & input = iA : s7;
+        state = s7 & input = iB : s7;
+        state = s7 & input = iC : s8;
+        state = s7 & input = iD : s7;
+        state = s7 & input = iE : s1;
+        state = s7 & input = iF : s7;
+        state = s7 & input = iG : s7;
+        state = s7 & input = iH : s7;
+        state = s7 & input = iI : s7;
+        state = s7 & input = iJ : s7;
+        state = s8 & input = iA : s8;
+        state = s8 & input = iB : s7;
+        state = s8 & input = iC : s8;
+        state = s8 & input = iD : s8;
+        state = s8 & input = iE : s8;
+        state = s8 & input = iF : s1;
+        state = s8 & input = iG : s8;
+        state = s8 & input = iH : s7;
+        state = s8 & input = iI : s8;
+        state = s8 & input = iJ : s8;
+        input = null : state;
+    esac;
+    next(output) := case
+        state = s0 & input = iA : oInv;
+        state = s0 & input = iB : oInv;
+        state = s0 & input = iC : oInv;
+        state = s0 & input = iD : oInv;
+        state = s0 & input = iE : oW;
+        state = s0 & input = iF : oInv;
+        state = s0 & input = iG : oP;
+        state = s0 & input = iH : oInv;
+        state = s0 & input = iI : oO;
+        state = s0 & input = iJ : oInv;
+        state = s1 & input = iA : oInv;
+        state = s1 & input = iB : oInv;
+        state = s1 & input = iC : oInv;
+        state = s1 & input = iD : oInv;
+        state = s1 & input = iE : oInv;
+        state = s1 & input = iF : oInv;
+        state = s1 & input = iG : oInv;
+        state = s1 & input = iH : oS;
+        state = s1 & input = iI : oInv;
+        state = s1 & input = iJ : oInv;
+        state = s2 & input = iA : oInv;
+        state = s2 & input = iB : oInv;
+        state = s2 & input = iC : oInv;
+        state = s2 & input = iD : oX;
+        state = s2 & input = iE : oInv;
+        state = s2 & input = iF : oInv;
+        state = s2 & input = iG : oInv;
+        state = s2 & input = iH : oInv;
+        state = s2 & input = iI : oInv;
+        state = s2 & input = iJ : oInv;
+        state = s3 & input = iA : oInv;
+        state = s3 & input = iB : oInv;
+        state = s3 & input = iC : oInv;
+        state = s3 & input = iD : oW;
+        state = s3 & input = iE : oInv;
+        state = s3 & input = iF : oInv;
+        state = s3 & input = iG : oInv;
+        state = s3 & input = iH : oInv;
+        state = s3 & input = iI : oInv;
+        state = s3 & input = iJ : oInv;
+        state = s4 & input = iA : oInv;
+        state = s4 & input = iB : oInv;
+        state = s4 & input = iC : oInv;
+        state = s4 & input = iD : oInv;
+        state = s4 & input = iE : oInv;
+        state = s4 & input = iF : oW;
+        state = s4 & input = iG : oInv;
+        state = s4 & input = iH : oInv;
+        state = s4 & input = iI : oInv;
+        state = s4 & input = iJ : oInv;
+        state = s5 & input = iA : oInv;
+        state = s5 & input = iB : oInv;
+        state = s5 & input = iC : oInv;
+        state = s5 & input = iD : oP;
+        state = s5 & input = iE : oInv;
+        state = s5 & input = iF : oInv;
+        state = s5 & input = iG : oInv;
+        state = s5 & input = iH : oInv;
+        state = s5 & input = iI : oInv;
+        state = s5 & input = iJ : oInv;
+        state = s6 & input = iA : oInv;
+        state = s6 & input = iB : oInv;
+        state = s6 & input = iC : oInv;
+        state = s6 & input = iD : oInv;
+        state = s6 & input = iE : oInv;
+        state = s6 & input = iF : oT;
+        state = s6 & input = iG : oInv;
+        state = s6 & input = iH : oInv;
+        state = s6 & input = iI : oInv;
+        state = s6 & input = iJ : oInv;
+        state = s7 & input = iA : oInv;
+        state = s7 & input = iB : oInv;
+        state = s7 & input = iC : oR;
+        state = s7 & input = iD : oInv;
+        state = s7 & input = iE : oY;
+        state = s7 & input = iF : oInv;
+        state = s7 & input = iG : oInv;
+        state = s7 & input = iH : oInv;
+        state = s7 & input = iI : oInv;
+        state = s7 & input = iJ : oInv;
+        state = s8 & input = iA : oInv;
+        state = s8 & input = iB : oT;
+        state = s8 & input = iC : oInv;
+        state = s8 & input = iD : oInv;
+        state = s8 & input = iE : oInv;
+        state = s8 & input = iF : oY;
+        state = s8 & input = iG : oInv;
+        state = s8 & input = iH : oT;
+        state = s8 & input = iI : oInv;
+        state = s8 & input = iJ : oInv;
+        input = null : null;
+    esac;
+INVAR !(input = null & output = null)
+    & !(input != null & output != null)
+    & !(state = s0 & input = iA)
+    & !(state = s0 & input = iB)
+    & !(state = s0 & input = iC)
+    & !(state = s0 & input = iD)
+    & !(state = s0 & input = iF)
+    & !(state = s0 & input = iH)
+    & !(state = s0 & input = iJ)
+    & !(state = s1 & input = iA)
+    & !(state = s1 & input = iB)
+    & !(state = s1 & input = iC)
+    & !(state = s1 & input = iD)
+    & !(state = s1 & input = iE)
+    & !(state = s1 & input = iF)
+    & !(state = s1 & input = iG)
+    & !(state = s1 & input = iI)
+    & !(state = s1 & input = iJ)
+    & !(state = s2 & input = iA)
+    & !(state = s2 & input = iB)
+    & !(state = s2 & input = iC)
+    & !(state = s2 & input = iE)
+    & !(state = s2 & input = iF)
+    & !(state = s2 & input = iG)
+    & !(state = s2 & input = iH)
+    & !(state = s2 & input = iI)
+    & !(state = s2 & input = iJ)
+    & !(state = s3 & input = iA)
+    & !(state = s3 & input = iB)
+    & !(state = s3 & input = iC)
+    & !(state = s3 & input = iE)
+    & !(state = s3 & input = iF)
+    & !(state = s3 & input = iG)
+    & !(state = s3 & input = iH)
+    & !(state = s3 & input = iI)
+    & !(state = s3 & input = iJ)
+    & !(state = s4 & input = iA)
+    & !(state = s4 & input = iB)
+    & !(state = s4 & input = iC)
+    & !(state = s4 & input = iD)
+    & !(state = s4 & input = iE)
+    & !(state = s4 & input = iG)
+    & !(state = s4 & input = iH)
+    & !(state = s4 & input = iI)
+    & !(state = s4 & input = iJ)
+    & !(state = s5 & input = iA)
+    & !(state = s5 & input = iB)
+    & !(state = s5 & input = iC)
+    & !(state = s5 & input = iE)
+    & !(state = s5 & input = iF)
+    & !(state = s5 & input = iG)
+    & !(state = s5 & input = iH)
+    & !(state = s5 & input = iI)
+    & !(state = s5 & input = iJ)
+    & !(state = s6 & input = iA)
+    & !(state = s6 & input = iB)
+    & !(state = s6 & input = iC)
+    & !(state = s6 & input = iD)
+    & !(state = s6 & input = iE)
+    & !(state = s6 & input = iG)
+    & !(state = s6 & input = iH)
+    & !(state = s6 & input = iI)
+    & !(state = s6 & input = iJ)
+    & !(state = s7 & input = iA)
+    & !(state = s7 & input = iB)
+    & !(state = s7 & input = iD)
+    & !(state = s7 & input = iF)
+    & !(state = s7 & input = iG)
+    & !(state = s7 & input = iH)
+    & !(state = s7 & input = iI)
+    & !(state = s7 & input = iJ)
+    & !(state = s8 & input = iA)
+    & !(state = s8 & input = iC)
+    & !(state = s8 & input = iD)
+    & !(state = s8 & input = iE)
+    & !(state = s8 & input = iG)
+    & !(state = s8 & input = iI)
+    & !(state = s8 & input = iJ)

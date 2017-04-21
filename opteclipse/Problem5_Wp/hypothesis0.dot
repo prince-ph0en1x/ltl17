@@ -1,0 +1,12 @@
+digraph g {
+__start0 [label="" shape="none"];
+
+	s0 [shape="circle" label="s0"];
+	s0 -> s0 [label="1 / Invalid input: 1;"];
+	s0 -> s0 [label="2 / Invalid input: 2;"];
+	s0 -> s0 [label="3 / Invalid input: 3;"];
+	s0 -> s0 [label="4 / 25;"];
+	s0 -> s0 [label="5 / Invalid input: 5;"];
+
+__start0 -> s0;
+}

@@ -1,0 +1,59 @@
+MODULE main
+VAR
+    state  : {s0};
+    input  : {iA, iB, iC, iD, iE, iF, iG, iH, iI, iJ, iK, iL, iM, iN, iO, null};
+    output : {oInv, oP, oQ, oR, oS, oT, oU, oV, oW, oX, oY, oZ, null};
+ASSIGN
+    init(state)  := s0;
+    init(output) := null;
+    next(state)  := case
+        state = s0 & input = iA : s0;
+        state = s0 & input = iB : s0;
+        state = s0 & input = iC : s0;
+        state = s0 & input = iD : s0;
+        state = s0 & input = iE : s0;
+        state = s0 & input = iF : s0;
+        state = s0 & input = iG : s0;
+        state = s0 & input = iH : s0;
+        state = s0 & input = iI : s0;
+        state = s0 & input = iJ : s0;
+        state = s0 & input = iK : s0;
+        state = s0 & input = iL : s0;
+        state = s0 & input = iM : s0;
+        state = s0 & input = iN : s0;
+        state = s0 & input = iO : s0;
+        input = null : state;
+    esac;
+    next(output) := case
+        state = s0 & input = iA : oT;
+        state = s0 & input = iB : oInv;
+        state = s0 & input = iC : oInv;
+        state = s0 & input = iD : oInv;
+        state = s0 & input = iE : oInv;
+        state = s0 & input = iF : oInv;
+        state = s0 & input = iG : oInv;
+        state = s0 & input = iH : oInv;
+        state = s0 & input = iI : oS;
+        state = s0 & input = iJ : oInv;
+        state = s0 & input = iK : oInv;
+        state = s0 & input = iL : oInv;
+        state = s0 & input = iM : oInv;
+        state = s0 & input = iN : oInv;
+        state = s0 & input = iO : oInv;
+        input = null : null;
+    esac;
+INVAR !(input = null & output = null)
+    & !(input != null & output != null)
+    & !(state = s0 & input = iB)
+    & !(state = s0 & input = iC)
+    & !(state = s0 & input = iD)
+    & !(state = s0 & input = iE)
+    & !(state = s0 & input = iF)
+    & !(state = s0 & input = iG)
+    & !(state = s0 & input = iH)
+    & !(state = s0 & input = iJ)
+    & !(state = s0 & input = iK)
+    & !(state = s0 & input = iL)
+    & !(state = s0 & input = iM)
+    & !(state = s0 & input = iN)
+    & !(state = s0 & input = iO)
