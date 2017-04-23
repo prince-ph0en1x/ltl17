@@ -76,14 +76,14 @@
 ### FAQ
 
  * Which algorithms are used for state machine learning?
-   * TTT algorithm is used for Learning and Wp and Random Walk for Testing
+   * TTT algorithm is used for Learning and Wp & Random Walk for Testing
  * How can I set these?
    * You need to open the .project file in Eclipse (or import the files from the src folder)
    * In ltl17/src/RERSlearner/RERSExperiment.java you can set the learning and testing method
    * Currently, the supported values for LearningMethod are { LStar, RivestSchapire, TTT, KearnsVazirani } and for TestingMethod { RandomWalk, WMethod, WpMethod, UserQueries }
- * Are the codes for RERSLearning same as in the Reference link?
-   * Essentially they are same. The BasicLearner code is changed to stop generation of .pdf files for the models with GraphViz as this creates lot of intermediate files and slows the learning method. Also, it accepts a file path from RERSLearner to direct the .dot file output directory as needed for our automation. The RERSLearner code is changed to take the problem number from the AutomateLTL code and generate the input alphabet for LTL 2017, and also the directory path required.
- * Is the postprocessing folder same as in the Reference link?
+ * Are the RERSLearning codes same as the ones used in the course?
+   * Yes, with minor modifications. The BasicLearner code is changed to stop generation of .pdf files for the models with GraphViz as this creates lot of intermediate files and slows the learning method. Also, it accepts a file path from RERSLearner to direct the .dot file output directory as needed for our automation. The RERSLearner code is changed to take the problem number from the AutomateLTL code and generate the input alphabet for LTL 2017, and also the directory path required.
+ * Is the postprocessing folder same as in the Reference link 2?
    * No, the Haskell codes in the link is not suited for LTL 2017 problems, as they allow only input alphabets of 5, 10 or 20 size. LTL 2017 problems also has input alphabets of 15. This is the only change done to the source codes. Also, in the cabal file, the build dependency is reduced from 4.9 to 4.8.
  * How long should I wait for the model.dot file?
    * Problem 1-3 (go grab a coffee), Problem 4-6 (take your dog for a walk), Problem 7-9 (go for a weekend trip to Amsterdam).
@@ -97,6 +97,6 @@
 
 ### References
 
- * https://github.com/TUDelft-CS4110-20162017/syllabus/tree/master/RERSLearning
- * https://gitlab.science.ru.nl/moerman/rers-2016/tree/master/postprocessing
- * http://nusmv.fbk.eu/NuSMV/download/getting-v2.html
+ 1. https://github.com/TUDelft-CS4110-20162017/syllabus/tree/master/RERSLearning
+ 2. https://gitlab.science.ru.nl/moerman/rers-2016/tree/master/postprocessing
+ 3. http://nusmv.fbk.eu/NuSMV/download/getting-v2.html
