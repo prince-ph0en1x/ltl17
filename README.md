@@ -6,7 +6,7 @@
  It hosts the code for Assignment 2 (State Machine Learning) for
  * Aritra Sarkar (4597982 MSc. Computer Engineering)
  * Prashanth GL (4610849 MSc. Computer Engineering)
- * Vivek Subramanian (4601211 MSc. )
+ * Vivek Subramanian (4601211 MSc. Digital Media Technology)
 
 ### Setup Guide
 
@@ -81,14 +81,17 @@
    * You need to open the .project file in Eclipse (or import the files from the src folder)
    * In ltl17/src/RERSlearner/RERSExperiment.java you can set the learning and testing method
    * Currently, the supported values for LearningMethod are { LStar, RivestSchapire, TTT, KearnsVazirani } and for TestingMethod { RandomWalk, WMethod, WpMethod, UserQueries }
- * Is the postprocessing folder same as in the Credit link?
+ * Are the codes for RERSLearning same as in the Reference link?
+   * Essentially they are same. The BasicLearner code is changed to stop generation of .pdf files for the models with GraphViz as this creates lot of intermediate files and slows the learning method. Also, it accepts a file path from RERSLearner to direct the .dot file output directory as needed for our automation. The RERSLearner code is changed to take the problem number from the AutomateLTL code and generate the input alphabet for LTL 2017, and also the directory path required.
+ * Is the postprocessing folder same as in the Reference link?
    * No, the Haskell codes in the link is not suited for LTL 2017 problems, as they allow only input alphabets of 5, 10 or 20 size. LTL 2017 problems also has input alphabets of 15. This is the only change done to the source codes. Also, in the cabal file, the build dependency is reduced from 4.9 to 4.8.
  * How long should I wait for the model.dot file?
-   * Problem 1-3 (go grab a coffee), Problem 4-6 (take your dog for a walk), Problem 7-9 (go for a weekend trip to Amsterdam). Jokes apart, this is the main task of predicting how the model is evolving, and whether any new constraints are getting satisfiable. It depends on the chosen learning and testing method. It is wise to run the LTL satisfiability on the hypothesis files once in a while to check if it has stabilised.
+   * Problem 1-3 (go grab a coffee), Problem 4-6 (take your dog for a walk), Problem 7-9 (go for a weekend trip to Amsterdam).
+   * Jokes apart, this is the main task of predicting how the model is evolving, and whether any new constraints are getting satisfiable. It depends on the chosen learning and testing method. It is wise to run the LTL satisfiability on the hypothesis files once in a while to check if it has stabilised.
  * What if I manually terminated the learning process?
    * This part is not automated. For manual termination, you need to rename the last hypothesis file to model.dot and rerun the automate program (and skip step 1 & 2).
  * Why is ConvLabel and ConvISym required?
-   * While the requirement is explained in the video, the reason for the errors of missing iJ and label ids with 0 now working in RERSLearner was beyond our scope. RegEx handling is an ad-hoc fix. And this is indeed an open issue.
+   * While the requirement is explained in the video, the reason for the errors of missing iJ and label ids with 0 not working in RERSLearner was beyond our scope. RegEx handling is an ad-hoc fix. And this is indeed an open issue.
  * How can I run in Windows system?
    * Though Java is machine independent, the process builder codes for shell script are based on the host system's OS, Ubuntu in our case. So right now there is no support for Windows.
 
