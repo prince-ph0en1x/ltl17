@@ -29,7 +29,7 @@
  1
  ... running Problem 3 LearnSM		 [0/1]?
  1
- ... running Problem 3 ConvLabel	 [0/1]?
+ ... running Problem 3 ConvLabel		 [0/1]?
  1
  ... running Problem 3 MainDot2Nu	 [0/1]?
  1
@@ -48,6 +48,12 @@
  
  Thanks
  ```
+
+ | Step | Name          | Input  | Input  |
+ | ---- |:-------------:| ------:| ------:|
+ | 1	| Compile		|		 |        |
+ | 2	| LearnSM		|		 |        |
+ | 3	| ConvLabel		|		 |        |
  
 ### FAQ
 
