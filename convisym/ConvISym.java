@@ -24,7 +24,7 @@ class Analyse
 		char alphS = 'K';
 		char alphE = (char)(alphS + (iAlphSz[pno-1] - 10));
 		
-		if (alphE-alphS < 0) return;
+		// return;
 		
 		BufferedReader br;
 		BufferedWriter bw;
@@ -32,18 +32,25 @@ class Analyse
 		br = new BufferedReader(new FileReader(pathRepo+"smv/Problem"+pno+"_s2.smv"));
 		bw = new BufferedWriter(new FileWriter(pathRepo+"smv/Problem"+pno+"_s3.smv"));
 		
-		String regex1 = "(.*?)(i["+alphS+"-"+alphE+"])(.*?)";
+		String regex1 = "(.*?)";
+		if (!(alphE-alphS < 0))
+		{
+			regex1 = "(.*?)(i["+alphS+"-"+alphE+"])(.*?)";
+		}
 		Pattern p1 = Pattern.compile(regex1);
 		
 		String line,linen;
 		while((line = br.readLine()) != null)
 		{
-			Matcher m1 = p1.matcher(line);
-			linen = line;
-			while(m1.find())
-			{	
-				linen = line.replaceAll(m1.group(2),"i"+(char)(m1.group(2).charAt(1)-1));
-				line = linen;
+			if (!(alphE-alphS < 0))
+			{
+				Matcher m1 = p1.matcher(line);
+				linen = line;
+				while(m1.find())
+				{	
+					linen = line.replaceAll(m1.group(2),"i"+(char)(m1.group(2).charAt(1)-1));
+					line = linen;
+				}
 			}
 			bw.write(line+"\n");
 		}	
